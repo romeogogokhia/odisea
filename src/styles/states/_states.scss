@@ -1,0 +1,14 @@
+.hamburger-top{
+  position: absolute;
+  right: 0;
+  top: 25px;
+  display: none;
+  @include media-breakpoint-down(lg){
+    display: block;
+  }
+}
+#navigation{
+  @include media-breakpoint-down(lg){
+    display: none;
+  }
+}

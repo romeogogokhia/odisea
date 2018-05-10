@@ -1,2 +1,48 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1300px
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1170px
+);
 
 
+
+
+// colors
+$accent-color: #2095B4;
+$dark-blue: #2484A1;
+$dark-blue2: #1C7289;
+$lighter-blue: #64CBC7;
+$bg-color: #EEEFF1;
+$ft-top-color: #242431;
+$ft-bottom-color: #3A3A4D;
+$orange-sale-color: #FFAC19;
+$white: #FFFFFF;
+
+// text
+$accent-text-color: #505050;
+$light-silver-text-color: #ACACAC;
+$light-silver-text-color2: #ADADAD;
+
+// border color
+$divider: #E2E2E2;
+
+
+// fonts
+$HelveticaNeueLTGEO-25UltLt: HelveticaNeueLTGEO-25UltLt, sans-serif;
+$HelveticaNeueLTGEO-35Thin: HelveticaNeueLTGEO-35Thin, sans-serif;
+$HelveticaNeueLTGEO-45Light: HelveticaNeueLTGEO-45Light, sans-serif;
+$HelveticaNeueLTGEO-55Roman: HelveticaNeueLTGEO-55Roman, sans-serif;
+$HelveticaNeueLTGEO-65Medium: HelveticaNeueLTGEO-65Medium, sans-serif;
+$HelveticaNeueLTGEO-75Bold: HelveticaNeueLTGEO-75Bold, sans-serif;
+$HelveticaNeueLTGEO-85Heavy: HelveticaNeueLTGEO-85Heavy, sans-serif;
+$HelveticaNeueLTGEO-95Black: HelveticaNeueLTGEO-95Black, sans-serif;
