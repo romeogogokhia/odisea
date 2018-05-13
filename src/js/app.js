@@ -8,6 +8,11 @@ window.slick = require('slick-carousel');
 let hamburger = document.querySelector('.hamburger-top');
 let navigation = document.getElementById('navigation');
 
+let dropdownBTN = document.querySelector('.dropdown-btn');
+let dropdownMenu = document.getElementById('dropdown-menu');
+let dropdownBTNArrow = document.querySelector('.dropdown-btn--arrow');
+
+
 hamburger.addEventListener('click', function () {
     if(this.classList.contains('is-active')){
         this.classList.remove('is-active');
@@ -32,34 +37,45 @@ cabinetBtn.addEventListener('click', function (e) {
     }
 });
 
+dropdownBTN.addEventListener('click', ()=>{
+    if(dropdownMenu.style.display === 'none'){
+        dropdownBTNArrow.style.transform = 'translateY(-50%) rotate(180deg)';
+        dropdownMenu.style.display = 'block'
+    }else{
+        dropdownBTNArrow.style.transform = 'translateY(-50%) rotate(360deg)';
+        dropdownMenu.style.display = 'none'
+    }
+})
+
 
 
 $(".main-slider").slick({
 
     // normal options...
-    infinite: false,
+    infinite: true,
+    arrows: false,
+    dots: true,
+    focusOnSelect: true,
+    slidesToShow: 1,
 
     // the magic
     responsive: [{
-
-        breakpoint: 1024,
-        settings: {
-            slidesToShow: 3,
-            infinite: true
+        breakpoint: 420,
+        settings:{
+            dots: false
         }
-
-    }, {
-
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 2,
-            dots: true
-        }
-
-    }, {
-
+    },{
         breakpoint: 300,
         settings: "unslick" // destroys slick
-
     }]
+});
+
+let $carousel = $(".main-slider");
+$(document).on('keydown', function(e) {
+    if(e.keyCode == 37) {
+        $carousel.slick('slickPrev');
+    }
+    if(e.keyCode == 39) {
+        $carousel.slick('slickNext');
+    }
 });

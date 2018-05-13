@@ -97,6 +97,22 @@
 }
 
 
+.main-slider-btn{
+  border: 1px solid $lighter-blue;
+  color: $lighter-blue;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 1rem;
+  }
+  padding: 0.875rem 2.0625rem;
+
+  @include media-breakpoint-down(md){
+    font-size: 0.8rem;
+    padding: 0.7rem 1.7rem;
+  }
+}
+
+
 
 
 

@@ -1,0 +1,11 @@
+.nav-top,
+.nav-bottom,
+.s-slider{
+  width: 100%;
+  & .container {
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
+
+}
