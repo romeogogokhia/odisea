@@ -1,1 +1,2 @@
-// import "./Picturefil"
+import "./Picturefil"
+import "./slick-custom"

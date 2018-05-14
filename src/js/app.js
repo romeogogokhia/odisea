@@ -1,9 +1,9 @@
-import "./vendor/Picturefil"
-
 import "jquery"
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
+
+import "./vendor/vendor"
 
 
 
@@ -71,35 +71,3 @@ if(window.screen.width < 576) {
         }
     });
 }
-
-
-$(".main-slider").slick({
-
-    // normal options...
-    infinite: true,
-    arrows: false,
-    dots: true,
-    focusOnSelect: true,
-    slidesToShow: 1,
-
-    // the magic
-    responsive: [{
-        breakpoint: 420,
-        settings:{
-            dots: false
-        }
-    },{
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-    }]
-});
-
-let $carousel = $(".main-slider");
-$(document).on('keydown', function(e) {
-    if(e.keyCode == 37) {
-        $carousel.slick('slickPrev');
-    }
-    if(e.keyCode == 39) {
-        $carousel.slick('slickNext');
-    }
-});
