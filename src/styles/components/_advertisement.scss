@@ -1,0 +1,69 @@
+.advertisement{
+  padding: 1.875rem 2.0625rem 0 2.0625rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-height: 13.3125rem;
+  margin-bottom: 2.375rem;
+
+  @include media-breakpoint-down(xl){
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+.advertisement.one{
+  background-color: $lighter-blue;
+}
+.advertisement.two{
+  background-color: $accent-color;
+}
+.advertisement-title{
+  color: $white;
+  font:{
+    family: $HelveticaNeueLTGEO-75Bold;
+    size: 1.5rem;
+  }
+  max-width: 60%;
+  padding-top: 1.125rem;
+
+  @include media-breakpoint-down(lg){
+    font-size: 1.2rem;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 1rem;
+  }
+}
+.advertisement-img{
+  margin-top: auto;
+  max-width: 40%;
+
+  @include media-breakpoint-down(lg){
+    margin: auto;
+  }
+}
+.advertisement-link{
+  color: $white;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 1rem;
+  }
+  position: absolute;
+  bottom: 1.875rem;
+  left: 2.0625rem;
+
+  &::after{
+    content: '';
+    background-image: url(../../assets/img/icons/white-arrow.svg);
+    height: 6.06px;
+    width: 12.12px;
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-left: 12px;
+  }
+
+  @include media-breakpoint-down(xl){
+    left: 1rem;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 0.9rem;
+  }
+}

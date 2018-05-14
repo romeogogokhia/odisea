@@ -133,12 +133,12 @@
 // .main-slider-wrapper customize
 .main-slider-wrapper .slick-dots{
   left: 3.375rem;
-  bottom: 70px;
+  bottom: 4.375rem;
   width: 15rem;
   text-align: left;
 
   @include media-breakpoint-down(md){
-    bottom: -40px;
+    bottom: -1.5625rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
