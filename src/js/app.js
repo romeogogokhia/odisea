@@ -4,6 +4,7 @@ window.jQuery = $;
 window.$ = $;
 
 import "./vendor/vendor"
+import "./slick-tabs"
 
 
 
@@ -71,3 +72,7 @@ if(window.screen.width < 576) {
         }
     });
 }
+
+
+
+

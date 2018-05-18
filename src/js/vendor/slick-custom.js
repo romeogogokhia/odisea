@@ -23,6 +23,19 @@ $(".main-slider").slick({
     }]
 });
 
+
+let $carousel = $(".main-slider");
+
+$(document).on('keydown', function(e) {
+    if(e.keyCode == 37) {
+        $carousel.slick('slickPrev');
+    }
+    if(e.keyCode == 39) {
+        $carousel.slick('slickNext');
+    }
+});
+
+
 $(".vacancy-slider").slick({
 
     // normal options...
@@ -44,16 +57,42 @@ $(".vacancy-slider").slick({
     }]
 });
 
+$(".sl-product").slick({
 
+    // normal options...
+    infinite: true,
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+    slidesToShow: 4,
 
-
-let $carousel = $(".main-slider");
-
-$(document).on('keydown', function(e) {
-    if(e.keyCode == 37) {
-        $carousel.slick('slickPrev');
-    }
-    if(e.keyCode == 39) {
-        $carousel.slick('slickNext');
-    }
+    // the magic
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 3
+        }
+    },{
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 2
+        }
+    },{
+        breakpoint: 576,
+        settings:{
+            slidesToShow: 1
+        }
+    },{
+        breakpoint: 300,
+        settings: "unslick" // destroys slick
+    }]
 });
+
+
+
+
+$(".sl-tabs").on("toggled", function (event, tab) {
+    $(".sl-product").slick("setPosition");
+});
+
+
