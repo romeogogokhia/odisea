@@ -11,11 +11,3 @@
   }
 
 }
-
-.s-advertisement{
-  margin-top: 1.875rem;
-
-  @include media-breakpoint-down(lg) {
-    margin-top: 2.625rem;
-  }
-}

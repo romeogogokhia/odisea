@@ -2,11 +2,7 @@
   min-height: 0;
   min-width: 0;
 }
-.slick-list,
-.slick-track,
-.slick-slide > div{
-  height: 100%;
-}
+
 
 .main-slider-wrapper{
   background-color: $white;
@@ -99,12 +95,16 @@
 
     @include media-breakpoint-down(md){
       width: 250px;
+      height: auto;
     }
     @include media-breakpoint-down(sm){
       order: 1;
       margin: auto;
     }
 
+    & img{
+      margin: auto;
+    }
   }
 }
 .main-slider-points{
@@ -260,12 +260,6 @@
 
 
 // .sl-product
-.s-sl-product{
-  background-color: $white;
-  margin-top: 2rem;
-  padding: 2.125rem 0 2.8125rem 0;
-
-}
 .sl-product-head{
   display: flex;
   justify-content: space-between;
@@ -278,27 +272,30 @@
   font:{
     family: $HelveticaNeueLTGEO-75Bold;
     size: 1.625rem;
-
   }
   margin: 0;
+
+  @include media-breakpoint-down(md){
+    font-size: 1.2rem;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 1rem;
+  }
 }
-.sl-tabs{
-  padding: 0;
-  display: flex;
-  margin: 0;
-}
+
 .sl-product{
 
   &--list{
     // margin-left: 1.875rem;
     // max-width: 16.875rem;
-    min-height: 27.4375rem;
+    // min-height: 27.4375rem;
     position: relative;
 
     .sl-product-link{
       border-top: 1px solid $sl-border;
       border-left: 1px solid $sl-border;
       border-right: 1px solid $sl-border;
+      background-color: $white;
       display: block;
       margin-right: 30px;
       padding: 1.5625rem 2.5rem;
@@ -318,7 +315,7 @@
           image: url("../../assets/img/icons/Rectangle-border-bottom.png");
           repeat: repeat-x;
         };
-        height: 10px;
+        height: 9px;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -348,6 +345,11 @@
   .sl-product-img{
     &--current{
       margin: auto;
+      transition: transform ease-in-out 500ms;
+
+      &:hover{
+        transform: scale(0.95);
+      }
     }
   }
 }
@@ -452,14 +454,20 @@
 }
 
 .sl-tabs {
+  padding: 0;
+  display: flex;
+  margin: 0;
   & > li a{
     color: $accent-text-color;
     font:{
       family: $HelveticaNeueLTGEO-65Medium;
       size: 1rem;
-
     }
     transition: color ease-in-out 200ms;
+
+    @include media-breakpoint-down(md){
+      font-size: .9rem;
+    }
   }
 
   & > li.active a{
@@ -468,8 +476,16 @@
   & > li+li{
     margin-left: 2rem;
 
+    @include media-breakpoint-down(md){
+      margin-left: 1.2rem;
+    }
     @include media-breakpoint-down(xs){
       margin: 0;
+    }
+  }
+  & > li{
+    @include media-breakpoint-down(xs){
+      text-align: right;
     }
   }
   & > li:hover a{
@@ -492,12 +508,16 @@
     //position: absolute;
     //left: 0;
     //top: 0;
+    //display: none;
     visibility: hidden;
     height: 0;
   }
   &--in.active{
+   // display: block;
     visibility: visible;
     height: 100%;
   }
 
 }
+
+

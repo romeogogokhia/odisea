@@ -1,0 +1,152 @@
+.footer{
+
+}
+.footer-top{
+  background-color: $ft-top-color;
+  padding: 1.375rem 0;
+}
+.footer-center{
+  background-color: $ft-bottom-color;
+  border-bottom: 1px solid $ft-divider;
+  padding: 5rem 0;
+
+  @include media-breakpoint-down(md){
+    padding: 2rem 0;
+  }
+}
+.footer-bottom{
+  background-color: $ft-bottom-color;
+  padding: 1.25rem 0;
+}
+
+.footer-tel{
+  color: $white;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 1.125rem;
+  }
+  margin: 10px 0;
+  display: inline-block;
+
+}
+
+.footer-input{
+  background-color: $white;
+  border-radius: 5px;
+  position: relative;
+  height: 45px;
+  width: 469px;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(lg){
+    width: 300px;
+  }
+
+  &--news{
+    border-radius: 5px;
+    border: none;
+    color: $light-silver-text-color;
+    font:{
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.875rem;
+    }
+    outline: none;
+    padding-left: 1.25rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  &--submit{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & > img{
+      display: block;
+      width: 1.461875rem;
+      height: 1.253125rem;
+      border: none;
+    }
+
+  }
+
+}
+
+.footer-nav{
+  &--menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    @include media-breakpoint-down(md){
+      flex-direction: column;
+    }
+
+    & > li+li{
+      margin-left: 26px;
+
+      @include media-breakpoint-down(md){
+        margin: 0;
+      }
+    }
+    & > li > a{
+      color: $white;
+      font:{
+        family: $HelveticaNeueLTGEO-65Medium;
+        size: 1rem;
+      }
+    }
+  }
+}
+
+.footer-social-nav{
+  &--menu{
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    position: relative;
+
+
+
+    & > li+li{
+      margin-left: 14px;
+    }
+    & > li{
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      overflow: hidden;
+    }
+  }
+
+}
+
+.social-nav-icons{
+  display: inline-block;
+  background: url("../../assets/img/icons/social-icons.svg") no-repeat;
+  height: 35px;
+  width: 133px;
+}
+.facebook{
+  background-position: 0;
+}
+.twitter{
+  background-position: -48px;
+
+}
+.youtube{
+  background-position: -96px;
+
+}
+.copyRight{
+  color: $white;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.75rem;
+  }
+}

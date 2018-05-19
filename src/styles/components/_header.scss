@@ -14,7 +14,7 @@
 .logo-wrap{
   height: 100%;
   &--img{
-    max-width: 7.125rem;
+    width: 7.125rem;
     @include media-breakpoint-down(xs){
       max-width: 5rem;
     }
@@ -28,16 +28,16 @@
   align-items: center;
 
   @include  media-breakpoint-down(lg){
-    background: rosybrown;
+    background: $accent-color;
     display: flex;
     flex-direction: column;
     margin-top: 98px;
     position: absolute;
-    z-index: 10;
     left: 0;
     right: 0;
     height: auto;
     padding: 20px;
+    z-index: 11;
   }
   & > li+li{
     margin-left: 1.5625rem;
@@ -52,6 +52,10 @@
     font:{
       family: $HelveticaNeueLTGEO-65Medium;
       size: 0.875rem;
+    }
+    @include  media-breakpoint-down(lg){
+      color: $white;
+      line-height: 1.6;
     }
   }
 }
@@ -426,18 +430,21 @@
   flex: 0 0 62.117%;
   max-width: 62.117%;
   position: relative;
-  &::after{
-    content: '';
-    background: {
-      image: url("../../assets/img/icons/search-icon.svg");
-      repeat: no-repeat;
-    };
-    height: 18px;
-    width: 18px;
+
+  &--submit{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     position: absolute;
-    right: 1rem;
     top: 50%;
+    right: 1rem;
+    padding: 0;
     transform: translateY(-50%);
+    & > img{
+      display: block;
+      height: 18px;
+      width: 18px;
+    }
   }
 
   @include media-breakpoint-down(xs){

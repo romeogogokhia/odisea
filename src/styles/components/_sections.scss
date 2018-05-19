@@ -1,0 +1,43 @@
+.s-slider{}
+
+.s-vacancy{
+  margin-bottom: 2rem;
+}
+
+.s-advertisement{
+  margin-top: 1.875rem;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 2.625rem;
+  }
+}
+
+.s-sl-product{
+  padding: 2rem 0 3.125rem 0;
+}
+.s-sl-product.odd{
+  background-color: $white;
+}
+.s-sl-product.even{
+  background-color: $bg-color;
+
+  .sl-product--list .sl-product-link::after{
+    background-color: $bg-color;
+  }
+}
+.s-sl-product.odd.bg-bt{
+  position: relative;
+
+  &::after{
+    content: '';
+    background: {
+      image: url("../../assets/img/icons/bg-bt.png");
+      repeat: repeat-x;
+    };
+    height: 9px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

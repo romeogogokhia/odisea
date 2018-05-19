@@ -9,6 +9,9 @@
   @include media-breakpoint-down(xl){
     padding: 1rem 1rem 0 1rem;
   }
+  @include media-breakpoint-down(xs){
+    padding: 0 1rem 0 1rem;
+  }
 }
 .advertisement.one{
   background-color: $lighter-blue;
