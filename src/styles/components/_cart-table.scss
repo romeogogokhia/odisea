@@ -1,0 +1,248 @@
+.cart-table-wrapper{
+  background-color: $white;
+  padding: 0 1.75rem 3.4375rem;
+
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  &--hack{
+    display: table-cell;
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+
+.cart-table{
+  min-width: 350px;
+  max-width: 100%;
+  width: 100%;
+  background-color: $white;
+  position: relative;
+  &--th{
+    color: $accent-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.875rem;
+    };
+    padding: 2.25rem 0 0.875rem;
+    border-bottom: 1px solid $ft-divider;
+
+    @include media-breakpoint-down(sm){
+      font-size: 0.8rem;
+    }
+    @include media-breakpoint-down(xs){
+      font-size: 0.75rem;
+    }
+  }
+  &--td{
+    //padding: 1.375rem 0;
+    border-bottom: 1px solid rgba($ft-divider, .5);
+  }
+  .cart-product-img{
+    max-width: 100px;
+  }
+  .cart-product-desc{
+    width: 71%;
+    & > .h3{
+      color: $accent-text-color;
+      font: {
+        family: $HelveticaNeueLTGEO-65Medium;
+        size: 1rem;
+      };
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 90%;
+      white-space: nowrap;
+
+      @include media-breakpoint-down(sm){
+        font-size: 0.75rem;
+      }
+      @include media-breakpoint-down(xs){
+        font-size: 0.6rem;
+      }
+    }
+    & > .h4{
+      color: $light-silver-text-color;
+      font: {
+        family: $HelveticaNeueLTGEO-65Medium;
+        size: 0.75rem;
+      };
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 90%;
+      white-space: nowrap;
+
+      @include media-breakpoint-down(sm){
+        font-size: 0.5rem;
+      }
+      @include media-breakpoint-down(xs){
+        font-size: 0.4rem;
+      }
+    }
+  }
+  .cart-product-figure{
+    align-items: center;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+
+.cart-table-points{
+  background-color: $bg-color;
+  border-radius: 5px;
+  height: 2.060625rem;
+  padding: 2px;
+  min-width: 5.5rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-breakpoint-down(sm){
+    min-width: 4.5rem;
+    height: 1.77rem;
+  }
+  @include media-breakpoint-down(xs){
+    min-width: 4rem;
+    height: 1.4rem;
+  }
+
+  & > span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.773125rem;
+
+    @include media-breakpoint-down(sm){
+      height: 1.5rem;
+    }
+    @include media-breakpoint-down(xs){
+      height: 1.3rem;
+    }
+  }
+  &--aside{
+    background-color: #8E8E8E;
+    width: 1.773125rem;
+    color: $white;
+    font: {
+      family: $SegoeUI;
+      size: 1.25rem;
+      weight: bold;
+    };
+
+    @include media-breakpoint-down(sm){
+      width: 1.5rem;
+      font-size: 1rem;
+    }
+    @include media-breakpoint-down(xs){
+      width: 1.3rem;
+      font-size: 0.7rem;
+    }
+  }
+  &--center{
+    color: $accent-text-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.875rem;
+    };
+    min-width: 2.2rem;
+    padding: 0 10px;
+
+    @include media-breakpoint-down(sm){
+      min-width: 1.5rem;
+      font-size: 0.78rem;
+    }
+    @include media-breakpoint-down(xs){
+      min-width: 1.3rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.cart-table-cost{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-table-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  &--top{
+    align-items: center;
+    display: flex;
+    margin:{
+      bottom: 2.125rem;
+      top: 1.375rem;
+    }
+    justify-content: space-between;
+    width: 17.8125rem;
+
+    @include media-breakpoint-down(xs){
+      padding-left: 1.5rem;
+      width: 100%;
+    }
+
+    &--in{
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--sum{
+    color: $accent-text-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 1rem;
+    };
+    margin-right: 0.9375rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(xs){
+      font-size: 0.75rem;
+    }
+  }
+
+  &--bottom{
+    margin-right: 5.4375rem;
+
+    @include media-breakpoint-down(xs){
+      //margin: 0;
+      margin: auto;
+    }
+  }
+}
+
+.close-icon,
+.delete-icon{
+  cursor: pointer;
+}
+
+.cart-table tbody tr:last-child .cart-table--td {
+  border-bottom: none;
+}
+.table-col-1{
+  width: 42.23826714801444%;
+}
+.table-col-2{
+  width: 17.87003610108303%;
+}
+.table-col-3{
+  width: 24.18772563176895%;
+}
+.table-col-4{
+  width: 16.15523465703971%;
+}
+
+
+.b-bt{
+  background: transparent url(../../assets/img/icons/Rectangle-border-bottom.png) repeat-x;
+  height: 9px;
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}

@@ -1,0 +1,72 @@
+.price{
+  color: $price-color;
+  display: inline-block;
+  font-family: $HelveticaNeueLTGEO-65Medium;
+  padding: 0 8px 0 0;
+  position: relative;
+
+  &::after{
+    content: '';
+    background-color: $price-color;
+    height: 0.75rem;
+    right: 2px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 1px;
+  }
+}
+
+.price.medium{
+  font-size: 1.25rem;
+
+  @include media-breakpoint-down(sm){
+    font-size: 1rem
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 0.75rem
+  }
+}
+.price.big{
+  color: $accent-text-color;
+  font-size: 1.5rem;
+
+  @include media-breakpoint-down(sm){
+    font-size: 1.25rem;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 0.8rem
+  }
+  &::after{
+    background-color: $accent-text-color;
+  }
+
+}
+.price.big.sum{
+  color: $accent-color;
+
+  @include media-breakpoint-down(sm){
+    font-size: 1.25rem;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 1rem
+  }
+
+  &::after{
+    background-color: $accent-color;
+  }
+
+}
+
+
+.bg-bt-triangle{
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    background: url("../../assets/img/icons/Rectangle-border-bottom.png") repeat-x;
+    height: 9px;
+    width: 100%;
+  }
+}

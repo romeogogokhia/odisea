@@ -25,19 +25,8 @@
     background-color: $bg-color;
   }
 }
-.s-sl-product.odd.bg-bt{
-  position: relative;
 
-  &::after{
-    content: '';
-    background: {
-      image: url("../../assets/img/icons/bg-bt.png");
-      repeat: repeat-x;
-    };
-    height: 9px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
+//s-cart
+.s-cart{
+  padding-bottom: 5rem;
 }

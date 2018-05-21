@@ -1,5 +1,18 @@
 .footer{
+  position: relative;
 
+  &::before{
+    content: '';
+    background: {
+      image: url("../../assets/img/icons/bg-bt.png");
+      repeat: repeat-x;
+    };
+    height: 9px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
 }
 .footer-top{
   background-color: $ft-top-color;

@@ -1,0 +1,39 @@
+.cart-head{
+  padding: 0.8rem 0 1.38rem 0;
+
+  .cart-title{
+    color: $accent-text-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 1.375rem;
+    }
+  }
+
+}
+.router-link{
+  font: {
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+  }
+}
+.router-home{
+  color: $router-link;
+  margin-right: 14px;
+  position: relative;
+
+  &::after{
+    content: '';
+    display: block;
+    background: url("../../assets/img/icons/silver-arrow.svg") no-repeat;
+    height: 4.91px;
+    width: 9.82px;
+    position: absolute;
+    top: 50%;
+    right: -23px;
+    transform: rotate(-90deg) translateY(-50%);
+  }
+}
+.router-cart{
+  margin-left: 12px;
+  color: $accent-text-color;
+}

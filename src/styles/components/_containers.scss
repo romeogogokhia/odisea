@@ -2,7 +2,8 @@
 .nav-bottom,
 .s-slider,
 .s-advertisement,
-.s-vacancy{
+.s-vacancy,
+.s-cart{
   width: 100%;
   & .container {
     @include media-breakpoint-down(md) {

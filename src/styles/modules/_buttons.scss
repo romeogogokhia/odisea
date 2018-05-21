@@ -113,6 +113,37 @@
 }
 
 
+// order button
+.order-btn{
+  background-color: $lighter-blue;
+  border-radius: 5px;
+  border: {
+    left: none;
+    right: none;
+    top: none;
+    bottom: 3px solid #E2E2E2;
+  }
+  color: $white;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+  }
+  padding: 0.65rem 1.4375rem 0.85rem;
+
+
+  @include media-breakpoint-down(xs){
+    font-size: 0.75rem;
+    padding: {
+      top: calc(0.65rem - 2%);
+      right: calc(1.4375rem - 2%);
+      bottom: calc(0.85rem - 2%);
+      left: calc(1.4375rem - 2%);
+    }
+  }
+}
+
+
+
 
 
 
