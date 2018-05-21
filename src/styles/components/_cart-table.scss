@@ -1,5 +1,10 @@
 .cart-table-wrapper{
   background-color: $white;
+  border:{
+    right: 1px solid $sl-border;
+    top: 1px solid $sl-border;
+    left: 1px solid $sl-border;
+  }
   padding: 0 1.75rem 3.4375rem;
 
   display: table;

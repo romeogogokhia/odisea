@@ -1,4 +1,4 @@
-.cart-head{
+.router-links-wrap{
   padding: 0.8rem 0 1.38rem 0;
 
   .cart-title{
@@ -7,8 +7,17 @@
       family: $HelveticaNeueLTGEO-65Medium;
       size: 1.375rem;
     }
+    margin: 0;
   }
 
+}
+.router-menu{
+  padding: 0;
+  display: inline-flex;
+
+  &--li{
+
+  }
 }
 .router-link{
   font: {
@@ -21,6 +30,8 @@
   margin-right: 14px;
   position: relative;
 
+}
+.router-arrow{
   &::after{
     content: '';
     display: block;
@@ -33,6 +44,7 @@
     transform: rotate(-90deg) translateY(-50%);
   }
 }
+
 .router-cart{
   margin-left: 12px;
   color: $accent-text-color;
