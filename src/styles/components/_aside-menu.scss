@@ -1,27 +1,90 @@
-.aside-menu{
-  padding: 0;
-  max-width: 17.5rem;
-  background-color: $white;
-  &--li{
-    border-bottom: 1px solid #E6E6E6;
-    padding: 0.9375rem 1.375rem;
+.aside-menu-wrap{
+  position: relative;
+  z-index: 12;
 
-    &:last-child{
-      border-bottom: none;
-      // padding-top: 0;
+  @include media-breakpoint-down(sm) {
+    &:hover .aside-nav{
+      //height: auto;
+      overflow: visible;
+      z-index: 12;
+    }
+    &:hover .aside-menu--li.active{
+      background-color: $accent-color;
+    }
+    &:hover .aside-menu--li.active > a{
+      color: white;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 30px;
+  }
+}
+.aside-nav {
+
+  @include media-breakpoint-down(sm){
+    position: relative;
+    margin-top: 1rem;
+    height: 55px;
+    overflow: hidden;
+  }
+
+  .aside-menu {
+    padding: 0;
+    max-width: 17.5rem;
+    background-color: $white;
+
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 100%;
+      width: 100%;
+
+      //height: 100%;
+      z-index: -1;
+
     }
 
-    & > a{
-      color: $accent-text-color;
-      font:{
-        family: $HelveticaNeueLTGEO-65Medium;
-        size: 1rem;
+    &--li {
+      border-bottom: 1px solid #E6E6E6;
+      padding: 0.9375rem 1.375rem;
+
+      @include media-breakpoint-down(sm) {
+        transition: all ease-in-out 200ms;
+
+        text-align: center;
+        &:hover{
+          background-color: $accent-color;
+        }
+        &:hover > a{
+          color: white
+        }
       }
-      transition: color ease-in-out 200ms;
-      &.active,
-      &:hover{
+
+      &:last-child {
+        border-bottom: none;
+      }
+      &.active > a {
         color: $accent-color;
+      }
+      & > a {
+        color: $accent-text-color;
+        font: {
+          family: $HelveticaNeueLTGEO-65Medium;
+          size: 1rem;
+        }
+        transition: color ease-in-out 200ms;
+
+        &:hover {
+          color: $accent-color;
+
+          @include media-breakpoint-down(sm) {
+            color: $white;
+          }
+        }
+
       }
     }
   }
+
 }

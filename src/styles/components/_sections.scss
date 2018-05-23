@@ -30,3 +30,14 @@
 .s-cart{
   padding-bottom: 5rem;
 }
+
+.article-content-wrap{
+  padding:{
+    bottom: 7.125rem;
+    left: 1.125rem;
+  }
+
+  @include media-breakpoint-down(sm){
+    padding-left: 0;
+  }
+}

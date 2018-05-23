@@ -12,27 +12,37 @@
 
 }
 .router-menu{
-  padding: 0;
   display: inline-flex;
-
+  margin: 0;
+  padding: 0;
   &--li{
-
+    position: relative;
+    margin: 0 12.5px;;
+    &.active > a{
+      color: $accent-text-color;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 .router-link{
+  color: $router-link;
   font: {
     family: $HelveticaNeueLTGEO-65Medium;
     size: 0.875rem;
   }
+  transition: color ease-in-out 200ms;
+  &:hover{
+    color: $accent-text-color;
+  }
 }
-.router-home{
-  color: $router-link;
-  margin-right: 14px;
-  position: relative;
 
-}
 .router-arrow{
-  &::after{
+  &::before{
     content: '';
     display: block;
     background: url("../../assets/img/icons/silver-arrow.svg") no-repeat;
@@ -40,12 +50,8 @@
     width: 9.82px;
     position: absolute;
     top: 50%;
-    right: -23px;
+    left: -15px;
     transform: rotate(-90deg) translateY(-50%);
   }
 }
 
-.router-cart{
-  margin-left: 12px;
-  color: $accent-text-color;
-}

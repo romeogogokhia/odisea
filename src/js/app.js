@@ -40,9 +40,11 @@ cabinetBtn.addEventListener('click', function (e) {
     e.preventDefault();
     console.log(window.getComputedStyle(cabinetLogin).getPropertyValue("opacity"));
     if(window.getComputedStyle(cabinetLogin).getPropertyValue("opacity") === '0' || window.getComputedStyle(cabinetLogin).getPropertyValue("opacity") === ''){
-        cabinetLogin.style.opacity = 1
+        Object.assign(cabinetLogin.style, {opacity: 1, zIndex: 13});
+        //cabinetLogin.style.opacity = 1
     }else{
-        cabinetLogin.style.opacity = 0
+        Object.assign(cabinetLogin.style, {opacity: 0, zIndex: 10});
+        // cabinetLogin.style.opacity = 0
     }
 });
 

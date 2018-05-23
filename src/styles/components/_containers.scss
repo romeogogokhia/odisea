@@ -3,7 +3,8 @@
 .s-slider,
 .s-advertisement,
 .s-vacancy,
-.s-cart{
+.s-cart,
+.s-wrap{
   width: 100%;
   & .container {
     @include media-breakpoint-down(md) {
