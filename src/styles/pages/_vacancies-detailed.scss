@@ -1,0 +1,56 @@
+.back-to-list{
+  color: $accent-color;
+  display: block;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+  }
+  text-align: right;
+
+  &--img{
+    margin-right: 0.5rem;
+    transform: rotate(90deg);
+
+    @include media-breakpoint-down(xs){
+      margin-right: 0.4rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs){
+    font-size: 0.8rem;
+  }
+}
+
+.vacancies-detailed{
+  font-size: 0.875rem;
+
+  @include media-breakpoint-down(xs){
+    font-size: 0.8rem;
+  }
+
+  .vacancies-title{
+    color: $accent-text-color;
+    font:{
+      family: $HelveticaNeueLTGEO-75Bold;
+      size: 1rem;
+    }
+    margin:{
+      bottom: 1.375rem;
+      top: 1.875rem;
+    }
+
+    @include media-breakpoint-down(xs){
+      font-size: 0.9rem;
+    }
+  }
+  .vacancies-date{
+    color: $accent-text-color;
+    font-family: $HelveticaNeueLTGEO-65Medium;
+    margin-bottom: 1.625rem;
+  }
+  .vacancies-content{
+    color: $accent-text-color;
+    font-family: $HelveticaNeueLTGEO-55Roman;
+    margin-bottom: 3.3rem;
+  }
+}

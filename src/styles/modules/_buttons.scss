@@ -142,6 +142,32 @@
   }
 }
 
+// dark-purple button
+.dark-purple{
+  background-color: $ft-bottom-color;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 1rem;
+  }
+  padding: 0.75rem 1.25rem;
+
+  @include media-breakpoint-down(xs){
+    padding: 0.75rem 1rem;
+    font-size: .9rem;
+  }
+}
+.dark-purple-img{
+  margin-right: 0.65rem;
+
+  @include media-breakpoint-down(xs){
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+}
 
 
 
@@ -197,3 +223,4 @@
     }
   }
 }
+
