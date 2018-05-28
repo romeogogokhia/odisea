@@ -4,9 +4,8 @@ window.jQuery = $;
 window.$ = $;
 
 import "./vendor/vendor"
-import "./slick-tabs"
-
-
+import "./scripts/slick-tabs"
+import "./scripts/noUiSlider"
 
 window.slick = require('slick-carousel');
 
@@ -74,7 +73,6 @@ if(window.screen.width < 576) {
         }
     });
 }
-
 
 
 

@@ -1,0 +1,85 @@
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle{
+  right: 0;
+  outline: none;
+}
+.aside-multi_range{
+  background-color: $white;
+  margin-bottom: 2.875rem;
+
+  .noUi-connects {
+    background-color: #E3E3E3;
+  }
+  .noUi-connect {
+    background: none;
+  }
+  .noUi-horizontal{
+    border: none;
+    height: 3px;
+  }
+  .noUi-horizontal .noUi-handle{
+    background-color: #64CBC7;
+    border-radius: 50%;
+    box-shadow: none;
+    border: none;
+    height: 11px;
+    width: 11px;
+    top: -4px;
+  }
+  .noUi-handle:after,
+  .noUi-handle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 3px;
+    background: #E3E3E3;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+  }
+  .noUi-handle:after {
+    left: 4px;
+  }
+}
+.product-list-content{
+  padding: 0 1.4375rem;
+}
+.from-to{
+  display: flex;
+  justify-content: center;
+  padding: 0.9375rem 0;
+
+  &--from,
+  &--to{
+    border: 1px solid #C9C9C9;
+    font:{
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.75rem;
+    }
+    max-width: 106.79px;
+    padding: 10px 15px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $line-through;
+  }
+  :-moz-placeholder {
+    color: $line-through;
+  }
+  ::-moz-placeholder {
+    color: $line-through;
+  }
+  :-ms-input-placeholder {
+    color: $line-through;
+  }
+
+  &--divider{
+    background-color: #B2B2B2;
+    height: 2px;
+    margin: auto 5px;
+    width: 8px;
+  }
+}
+.multi-range-box{
+  padding: 0.9375rem 0;
+}
