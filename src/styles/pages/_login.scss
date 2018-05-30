@@ -1,0 +1,68 @@
+.login-wrap{
+  background-color: white;
+  position: relative;
+  padding: 3.625rem 4.375rem 2.5rem;
+
+  @include media-breakpoint-down(lg){
+    padding: 2.5rem 2.7rem;
+  }
+  @include media-breakpoint-down(md){
+    padding: 2.5rem 2rem;
+  }
+  @include media-breakpoint-down(xs){
+    padding: 2.5rem 1rem;
+  }
+}
+.login-form-under{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.6875rem 0 2.8125rem;
+}
+.remind-password{
+  color: $login-grey-text;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+  }
+
+  @include media-breakpoint-down(xs){
+    font-size: 0.75rem;
+  }
+}
+.is-registration{
+  color: $login-grey-text;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+  }
+}
+.registration-title{
+  color: $accent-color;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 1.25rem;
+    weight: normal;
+  }
+}
+.login-social-link{
+  color: $white;
+  cursor: pointer;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.7rem;
+    weight: 300;
+  }
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+
+  @include media-breakpoint-down(sm){
+    text-align: center;
+  }
+}
+.login-googlePlus{
+  background-color: #3C66C4;
+}
+.login-facebook{
+  background-color: #CF4332;
+}

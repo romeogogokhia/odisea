@@ -214,9 +214,9 @@
 <section class="s-wrap">
 
     <div class="container p-lg-0">
-        <div class="row no-gutters">
+        <div class="row no-gutters justify-content-center">
 
-            <div class="col-sm-6 col-md-12">
+            <div class="col-12">
                 <aside class="router-links-wrap">
                     <h1 class="cart-title">შესვლა</h1>
                     <nav>
@@ -232,70 +232,45 @@
                 </aside>
             </div>
 
-            <div class=col-xs-12">
-
-
-                <aside class="aside-menu-wrap">
-                    <nav class="aside-nav">
-                        <ul class="aside-menu">
-                            <li class="aside-menu--li">
-                                <a href="#">ჩვენ შესახებ</a>
-                            </li>
-                            <li class="aside-menu--li active">
-                                <a href="#">მომსახურება</a>
-                            </li>
-                            <li class="aside-menu--li">
-                                <a href="#">ვაკანსიები</a>
-                            </li>
-                            <li class="aside-menu--li">
-                                <a href="#">კონტაქტი</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </aside>
-
-            </div>
-            <div class="col-sm-12 col-md-9">
+            <div class="col-md-8 col-lg-5">
 
                 <section class="s-login">
 
                     <div class="login-wrap even">
 
-                        <div class="contact-form">
+                        <div class="login-form">
 
-                            <form class="form-wrap">
+                            <form>
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label class="required-label form-label" for="inputName">სახელი</label>
-                                        <input type="text" class="form-control form-control-custom" id="inputName" required>
+                                    <div class="form-group col-md-12">
+                                        <label class="form-label" for="LoginUser">მომხმარებელი</label>
+                                        <input type="text" class="form-control form-control-custom" id="LoginUser" required>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="required-label form-label" for="inputForm">გვარი</label>
-                                        <input type="password" class="form-control form-control-custom" id="inputForm" required>
+                                    <div class="form-group col-md-12">
+                                        <label class="form-label" for="LoginPassword">პაროლი</label>
+                                        <input type="password" class="form-control form-control-custom" id="LoginPassword" required>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="required-label form-label" for="inputEmail">ელ. ფოსტა</label>
-                                        <input type="email" class="form-control form-control-custom" id="inputEmail" required>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="form-label" for="inputPhone">ტელეფონი</label>
-                                        <input type="password" class="form-control form-control-custom" id="inputPhone">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="inputTitle">სათაური</label>
-                                    <input type="text" class="form-control form-control-custom" id="inputTitle">
-                                </div>
-                                <div class="form-group">
-                                    <label class="required-label form-label" for="inputLetter">წერილი</label>
-                                    <textarea class="form-control form-control-custom contact-textarea-input" id="inputLetter" required></textarea>
                                 </div>
                                 <div class="form-row justify-content-between align-items-center from-row-m">
-                                    <div class="col-sm-auto">
-                                        <small class="contact-form-note"><span class="contact-form-note--red">შენიშვნა: </span>ფიფქით მონიშნული ველები აუცილებელია</small>
+                                    <div class="col-6">
+                                        <a href="#" class="remind-password">პაროლის შეხსენება</a>
                                     </div>
-                                    <div class="col-sm-auto">
-                                        <button type="submit" class="order-btn">გაგზავნა</button>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <button type="submit" class="order-btn">შესვლა</button>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-between align-items-center from-row-m">
+                                    <div class="col-sm-6">
+                                        <div class="login-social-link login-facebook">
+                                            <img class="login-facebook-icon" src="./assets/img/icons/social-icons.svg" width="20px" alt="">
+                                            <span>Login with Facebook</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="login-social-link login-googlePlus">
+                                            <img  class="login-googlePlus-icon" src="./assets/img/icons/social-icons.svg" width="20px" alt="">
+                                            <span>Sign in with Google+</span>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -303,7 +278,10 @@
                         </div>
 
                     </div>
-
+                    <div class="login-form-under">
+                        <a class="is-registration" href="#">არ ხართ დარეგისტრირებული?</a>
+                        <a href="#"><h2 class="registration-title">რეგისტრაცია</h2></a>
+                    </div>
                 </section>
 
             </div>
