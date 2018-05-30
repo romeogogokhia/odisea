@@ -1,0 +1,28 @@
+.tab-nav{
+  background-color: white;
+}
+.tab-menu{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  &--li{
+    background-color: #E8E8E8;
+    color: #959595;
+    font:{
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 1rem;
+    }
+    flex: 1;
+    padding: 1.375rem 2.625rem;
+  }
+  &--li.active{
+    background-color: white;
+    color: $accent-color;
+  }
+}
+.register-form{
+  display: none;
+}
+.register-form.active{
+  display: block;
+}

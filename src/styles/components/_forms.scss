@@ -12,12 +12,30 @@
     }
   }
 }
+.required-label{
+  position: relative;
+  &::after{
+    content: '';
+    background: {
+      image: url('../../assets/img/icons/required-star.svg');
+      repeat: no-repeat;
+      size: cover;
+    }
+    display: block;
+    height: 100%;
+    width: .5rem;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+  }
+}
 
 .form-control-custom{
   background-color: #EEEFF1;
   border: none;
   border-radius: 5px;
-  padding: 0.69rem 0.75rem
+  padding: 0.69rem 0.75rem;
+  margin: 2px 0;
 }
 .form-label{
   color: $accent-text-color;

@@ -1,0 +1,40 @@
+.s-register{
+  .login-wrap{
+    padding-top: 0;
+  }
+}
+.register-form{
+  .order-btn{
+    margin:{
+      bottom: 1rem;
+      top: 1.5rem;
+    }
+    width: 100%;
+  }
+}
+.input-divider{
+  background-color: rgba($ft-divider, 0.22);
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin:{
+    bottom: 0.5rem;
+    top: 2.5rem;
+  }
+}
+.required-note{
+  color: $login-grey-text;
+  display: block;
+  font: {
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+    weight: normal;
+  };
+  margin:{
+    bottom: 0.625rem;
+    top: 2rem;
+  }
+  & > span{
+    color: #FF3939;
+  }
+}

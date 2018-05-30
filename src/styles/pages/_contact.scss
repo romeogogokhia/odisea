@@ -113,23 +113,6 @@
 // .contact-form
 
 .contact-form{
-  .required-label{
-    position: relative;
-    &::after{
-      content: '';
-      background: {
-        image: url('../../assets/img/icons/required-star.svg');
-        repeat: no-repeat;
-        size: cover;
-      }
-      display: block;
-      height: 100%;
-      width: .5rem;
-      position: absolute;
-      right: -10px;
-      top: -5px;
-    }
-  }
   .order-btn{
     padding: 0.5rem 1.9rem 0.7rem;
   }
