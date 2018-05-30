@@ -30,6 +30,7 @@
 .s-also-see-slider.even{
   margin-bottom: 5.875rem;
 }
+
 .product-list-wrapper.even,
 .s-also-see-slider.even{
   .sl-product--list .sl-product-link::after{
@@ -44,6 +45,8 @@
   padding-bottom: 6rem;
   margin-bottom: 2.8125rem;
 }
+.login-wrap.even::after,
+.article-content.even::after,
 .details-section.even::after{
   content: '';
   background-image: url(../../assets/img/icons/Rectangle-border-bottom.png);

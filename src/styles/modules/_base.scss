@@ -19,3 +19,23 @@ a:hover{
   color: initial;
   text-decoration: none;
 }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: $accent-text-color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $accent-text-color;;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $accent-text-color;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $accent-text-color;
+}
+:-ms-input-placeholder { /* Microsoft Edge */
+  color: $accent-text-color;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+  color: $accent-text-color;
+}
