@@ -1,0 +1,216 @@
+.products-details-nav-wrappper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.products-details-title-wrap{
+  padding-top: 6px;
+  .products-details-title{
+    color: $accent-text-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 1.4375rem;
+      weight: normal;
+    };
+    margin-bottom: 0;
+  }
+  .products-details-author{
+    color: $light-silver-text-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 1rem;
+      weight: normal;
+    };
+    margin-bottom: 1.3rem;
+  }
+}
+.products-details{
+  padding:{
+    right: 1.875rem;
+    top: 1.6875rem;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 1.6875rem;
+  }
+
+  &--info{
+    .sl-product-desc--price{
+      font-size: 2.1875rem;
+      margin-bottom: 2rem;
+
+      &:after{
+        height: 38.47%;
+      }
+    }
+    &--center{
+
+    }
+    &--bottom{
+      height: 45px;
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-down(xs){
+        flex-direction: column;
+        height: 6rem;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .cart-table-points{
+        height: 2.6875rem;
+        padding: 4px;
+        margin-right: 1.6875rem;
+
+        &--aside{
+          width: 2.3125rem;
+          height: 2.3125rem;
+          position: relative;
+
+          &--minus{
+            background-color: white;
+            width: 0.9375rem;
+            height: 0.1875rem;
+            cursor: pointer;
+          }
+          &--plus{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 15px;
+            height: 3px;
+            background-color: white;
+            cursor: pointer;
+            &::after{
+              content: '';
+              background-color: white;
+              display: block;
+              width: 0.9375rem;
+              height: 0.1875rem;
+              transform: rotate(90deg);
+            }
+
+          }
+        }
+        &--center{
+          color: $accent-text-color;
+          font: {
+            family: $HelveticaNeueLTGEO-65Medium;
+            size: 1.25rem;
+          };
+          min-width: 3.25rem;
+        }
+        & > span{
+          height: 2.3125rem;
+        }
+
+      }
+
+      .add-to-cart-btn{
+        padding: 0.45rem 1.25rem 0.65rem;
+
+        @include media-breakpoint-down(md){
+          font-size: 0.75rem;
+          padding: 0.5rem;
+        }
+        .shopping-cart-white{
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  &--desc{
+    border-top: 1px solid rgba($ft-divider, 0.17);
+    padding-top: 2rem;
+    margin-top: 2.375rem;
+    &--title{
+      color: $accent-text-color;
+      font: {
+        family: $HelveticaNeueLTGEO-65Medium;
+        size: 1.375rem;
+        weight: normal;
+      };
+      margin-bottom: 0.8125rem;
+    }
+    &--content{
+      color: $accent-text-color;
+      font: {
+        family: $HelveticaNeueLTGEO-65Medium;
+        size: 0.75rem;
+      };
+    }
+  }
+}
+.products-details-nav{
+  margin-bottom: 2.75rem;
+
+  @include media-breakpoint-down(xs){
+    margin-bottom: 2rem;
+  }
+}
+.products-details-ul{
+  width: 210px;
+  padding: 0;
+
+  &--li{
+    color: $accent-text-color;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.875rem;
+      weight: normal;
+    };
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & > a{
+      color: $accent-text-color;
+      display: flex;
+      justify-content: flex-start;
+      width: 50%;
+    }
+  }
+}
+.products-details-social-nav{
+  padding-top: 12px;
+}
+.products-details-social-ul{
+  @include media-breakpoint-down(xs){
+    padding: 0;
+  }
+  &--li{
+    width: 38px;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+
+    & > a{
+      display: block;
+      & > img{
+        position: absolute;
+        left: 0;
+      }
+      .facebook{
+        top: 0;
+      }
+      .twitter{
+        top: -32px;
+      }
+      .printer-social{
+        top: -64px;
+      }
+      .plus-social{
+        top: -97px;
+      }
+    }
+  }
+}
+
+.also-see-title-wrap{
+  .sl-product-title{
+    margin-bottom: 1.375rem;
+  }
+}

@@ -88,11 +88,49 @@ $(".sl-product").slick({
     }]
 });
 
-
-
-
-$(".sl-tabs").on("toggled", function (event, tab) {
+/*$(".sl-tabs").on("toggled", function (event, tab) {
     $(".sl-product").slick("setPosition");
+});*/
+
+
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
 });
+$('.slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 4
+        },
+    },{
+        breakpoint: 767.98,
+        settings: {
+            slidesToShow: 5
+        },
+    },{
+        breakpoint: 567.98,
+        settings: {
+            slidesToShow: 4
+        },
+    },{
+        breakpoint: 399.98,
+        settings: {
+            slidesToShow: 3
+        },
+    }]
+});
+
 
 

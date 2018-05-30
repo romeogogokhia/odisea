@@ -26,6 +26,36 @@
   }
 }
 
+//s-also-see-slider in product-details.html
+.s-also-see-slider.even{
+  margin-bottom: 5.875rem;
+}
+.product-list-wrapper.even,
+.s-also-see-slider.even{
+  .sl-product--list .sl-product-link::after{
+    background-color: $bg-color;
+  }
+}
+
+// details-section  in product-details.html
+.details-section{
+  background-color: $white;
+  position: relative;
+  padding-bottom: 6rem;
+  margin-bottom: 2.8125rem;
+}
+.details-section.even::after{
+  content: '';
+  background-image: url(../../assets/img/icons/Rectangle-border-bottom.png);
+  background-repeat: repeat-x;
+  height: 9px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $bg-color;
+}
+
 //s-cart
 .s-cart{
   padding-bottom: 5rem;
