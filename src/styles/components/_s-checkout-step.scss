@@ -1,0 +1,21 @@
+.s-checkout-step{
+  background-color: white;
+  padding: 1.7rem 2.25rem 3.25rem 2.25rem;
+  margin-bottom: 16.125rem;
+  position: relative;
+
+  & .order-btn{
+    padding: 1rem 2.25rem 0.75rem;
+  }
+}
+.checkout-step-title{
+  border-bottom: 1px solid $ft-divider;
+  color: $accent-color;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.875rem;
+    weight: normal;
+  };
+  margin: 0;
+  padding-bottom: 1rem;
+}

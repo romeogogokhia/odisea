@@ -1,0 +1,35 @@
+.checkout-step-1{
+  margin-bottom: 2.75rem;
+
+  & > .checkout-step-title{
+    margin-bottom: 4.625rem;
+
+    @include media-breakpoint-down(md){
+      margin-bottom: 3rem;
+    }
+  }
+
+  .border-right{
+    border-right: 1px solid $border-right !important;
+
+    @include media-breakpoint-down(sm){
+      border-right: none !important;
+    }
+  }
+
+  .login-form-under{
+    padding: 1rem;
+    text-align: center;
+  }
+
+}
+
+.checkout-step-1-form{
+  margin-right: 2.0625rem;
+
+  @include media-breakpoint-down(sm){
+    border-bottom: 1px solid $border-right;
+    margin: 0 0 1rem;
+    padding-bottom: 2.3rem;
+  }
+}

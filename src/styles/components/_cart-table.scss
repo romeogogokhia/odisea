@@ -48,42 +48,6 @@
   }
   .cart-product-desc{
     width: 71%;
-    & > .h3{
-      color: $accent-text-color;
-      font: {
-        family: $HelveticaNeueLTGEO-65Medium;
-        size: 1rem;
-      };
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 90%;
-      white-space: nowrap;
-
-      @include media-breakpoint-down(sm){
-        font-size: 0.75rem;
-      }
-      @include media-breakpoint-down(xs){
-        font-size: 0.6rem;
-      }
-    }
-    & > .h4{
-      color: $light-silver-text-color;
-      font: {
-        family: $HelveticaNeueLTGEO-65Medium;
-        size: 0.75rem;
-      };
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 90%;
-      white-space: nowrap;
-
-      @include media-breakpoint-down(sm){
-        font-size: 0.5rem;
-      }
-      @include media-breakpoint-down(xs){
-        font-size: 0.4rem;
-      }
-    }
   }
   .cart-product-figure{
     align-items: center;
@@ -92,7 +56,44 @@
     justify-content: space-between;
   }
 }
+.cart-product-type{
+  color: $accent-text-color;
+  font: {
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 1rem;
+    weight: normal;
+  };
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+  white-space: nowrap;
 
+  @include media-breakpoint-down(sm){
+    font-size: 0.75rem;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 0.6rem;
+  }
+}
+.cart-product-title{
+  color: $light-silver-text-color;
+  font: {
+    family: $HelveticaNeueLTGEO-65Medium;
+    size: 0.75rem;
+    weight: normal;
+  };
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+  white-space: nowrap;
+
+  @include media-breakpoint-down(sm){
+    font-size: 0.5rem;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 0.4rem;
+  }
+}
 .cart-table-points{
   background-color: $bg-color;
   border-radius: 5px;
@@ -127,13 +128,14 @@
   }
   &--aside{
     background-color: #8E8E8E;
-    width: 1.773125rem;
     color: $white;
+    cursor: pointer;
     font: {
       family: $SegoeUI;
       size: 1.25rem;
       weight: bold;
     };
+    width: 1.773125rem;
 
     @include media-breakpoint-down(sm){
       width: 1.5rem;

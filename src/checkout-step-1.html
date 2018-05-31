@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>login</title>
+    <title>checkout step 1</title>
 </head>
 
 <body>
@@ -214,77 +214,152 @@
 <section class="s-wrap">
 
     <div class="container p-lg-0">
-        <div class="row no-gutters justify-content-center">
+        <div class="row justify-content-center">
 
             <div class="col-12">
                 <aside class="router-links-wrap">
-                    <h1 class="cart-title">შესვლა</h1>
+                    <h1 class="cart-title">შეკვეთის გაფორმება</h1>
                     <nav>
                         <ul class="router-menu">
                             <li class="router-menu--li">
                                 <a class="router-link" href="#">მთავარი</a>
                             </li>
                             <li class="router-menu--li active router-arrow">
-                                <a class="router-link" href="#">შესვლა</a>
+                                <a class="router-link" href="#">კალათა</a>
                             </li>
                         </ul>
                     </nav>
                 </aside>
             </div>
 
-            <div class="col-md-8 col-lg-5">
+            <div class="order-2 order-md-1 col-md-8 col-lg-9">
 
-                <section class="s-login">
+                <section class="s-checkout-step even">
+                    <div class="checkout-step-1">
 
-                    <div class="login-wrap even">
+                        <h2 class="checkout-step-title">1. ავტორიზაცია</h2>
 
-                        <div class="login-form">
+                        <div class="checkout-step-1-wrap">
+                            <div class="row">
+                                <div class="col-md-8 col-lg-6 border-right">
 
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label class="form-label" for="LoginUser">მომხმარებელი</label>
-                                        <input type="text" class="form-control form-control-custom" id="LoginUser" required>
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <label class="form-label" for="LoginPassword">პაროლი</label>
-                                        <input type="password" class="form-control form-control-custom" id="LoginPassword" required>
-                                    </div>
-                                </div>
-                                <div class="form-row justify-content-between align-items-center from-row-m">
-                                    <div class="col-6">
-                                        <a href="#" class="remind-password">პაროლის შეხსენება</a>
-                                    </div>
-                                    <div class="col-6 d-flex justify-content-end">
-                                        <button type="submit" class="order-btn">შესვლა</button>
-                                    </div>
-                                </div>
-                                <div class="form-row justify-content-between align-items-center from-row-m">
-                                    <div class="col-sm-6">
-                                        <div class="login-social-link login-facebook">
-                                            <img class="login-facebook-icon" src="./assets/img/icons/social-icons.svg" width="20px" alt="">
-                                            <span>Login with Facebook</span>
+                                    <form class="checkout-step-1-form">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label class="form-label" for="LoginUser">მომხმარებელი</label>
+                                                <input type="text" class="form-control form-control-custom" id="LoginUser" required>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label class="form-label" for="LoginPassword">პაროლი</label>
+                                                <input type="password" class="form-control form-control-custom" id="LoginPassword" required>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="login-social-link login-googlePlus">
-                                            <img  class="login-googlePlus-icon" src="./assets/img/icons/social-icons.svg" width="20px" alt="">
-                                            <span>Sign in with Google+</span>
+                                        <div class="form-row justify-content-between align-items-center from-row-m">
+                                            <div class="col-6">
+                                                <a href="#" class="remind-password">პაროლის შეხსენება</a>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <button type="submit" class="order-btn">შესვლა</button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
+
                                 </div>
-                            </form>
+
+                                <div class="col-md-4 col-lg-6 d-flex align-items-center justify-content-center">
+
+                                    <div class="login-form-under">
+                                        <small class="is-registration">შეკვეთის გასაფორმებლად გთხოვთ დარეგისტრირდეთ</small>
+                                        <a href="#"><h2 class="registration-title">რეგისტრაცია</h2></a>
+                                    </div>
+
+                                </div>
+                            </div>
 
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="login-form-under">
-                        <small class="is-registration">არ ხართ დარეგისტრირებული?</small>
-                        <a href="#"><h2 class="registration-title">რეგისტრაცია</h2></a>
-                    </div>
                 </section>
 
             </div>
+
+            <div class="order-1 order-md-2  col-md-4 col-lg-3">
+
+                <aside class="right-aside-cart">
+
+                    <div class="right-aside-cart-wrap">
+
+                        <div class="right-aside-cart-wrap--header">
+                            <h2 class="right-aside-cart-title">კალათა</h2>
+                        </div>
+
+                        <div class="right-aside-cart-wrap--content">
+
+                            <figure class="cart-product-figure">
+                                <div class="cart-img-wrap">
+                                    <img class="cart-current-img" src="assets/img/ldpi/Image-65.png" alt="">
+                                </div>
+                                <figcaption class="cart-product-desc">
+                                    <h3 class="cart-product-type">ტონალური კრემი</h3>
+                                    <h4 class="cart-product-title">MAYBELLINE NY</h4>
+                                </figcaption>
+                            </figure>
+                            <div class="cart-product-desc-footer">
+                                <small class="right-aside-cart-count">2 ცალი</small>
+                                <span class="price small">26.70</span>
+                            </div>
+
+                        </div>
+                        <div class="right-aside-cart-wrap--content">
+
+                            <figure class="cart-product-figure">
+                                <div class="cart-img-wrap">
+                                    <img class="cart-current-img" src="assets/img/ldpi/Image-41.png" alt="">
+                                </div>
+                                <figcaption class="cart-product-desc">
+                                    <h3 class="cart-product-type">ტონალური კრემი</h3>
+                                    <h4 class="cart-product-title">MAYBELLINE NY</h4>
+                                </figcaption>
+                            </figure>
+                            <div class="cart-product-desc-footer">
+                                <small class="right-aside-cart-count">2 ცალი</small>
+                                <span class="price small">26.70</span>
+                            </div>
+
+                        </div>
+                        <div class="right-aside-cart-wrap--content">
+
+                            <figure class="cart-product-figure">
+                                <div class="cart-img-wrap">
+                                    <img class="cart-current-img" src="assets/img/ldpi/Image-65.png" alt="">
+                                </div>
+                                <figcaption class="cart-product-desc">
+                                    <h3 class="cart-product-type">ტონალური კრემი</h3>
+                                    <h4 class="cart-product-title">MAYBELLINE NY</h4>
+                                </figcaption>
+                            </figure>
+                            <div class="cart-product-desc-footer">
+                                <small class="right-aside-cart-count">2 ცალი</small>
+                                <span class="price small">26.70</span>
+                            </div>
+
+                        </div>
+
+                        <div class="cart-table-footer--top--in">
+                            <h5 class="cart-table-footer--sum">სულ ჯამში:</h5>
+                            <span class="price medium sum">100.00</span>
+                        </div>
+
+                    </div>
+
+                    <div class="right-aside-cart--footer">
+                        <small class="right-aside-cart-edit">რედაქტირება</small>
+                    </div>
+
+                </aside>
+
+            </div>
+
         </div>
     </div>
 

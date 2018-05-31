@@ -18,6 +18,10 @@
   flex-direction: column;
   align-items: center;
   padding: 2.6875rem 0 2.8125rem;
+
+  @include media-breakpoint-only(md){
+    padding: 0;
+  }
 }
 .remind-password{
   color: $login-grey-text;
@@ -36,6 +40,11 @@
     family: $HelveticaNeueLTGEO-65Medium;
     size: 0.875rem;
   }
+  margin-bottom: .4rem;
+
+  @include media-breakpoint-only(md){
+    font-size: 0.7rem;
+  }
 }
 .registration-title{
   color: $accent-color;
@@ -43,6 +52,10 @@
     family: $HelveticaNeueLTGEO-65Medium;
     size: 1.25rem;
     weight: normal;
+  }
+
+  @include media-breakpoint-only(md){
+    font-size: 1rem;
   }
 }
 .login-social-link{
