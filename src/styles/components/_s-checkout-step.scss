@@ -4,8 +4,20 @@
   margin-bottom: 16.125rem;
   position: relative;
 
+  @include media-breakpoint-down(xs){
+    margin-bottom: 8rem;
+  }
+
   & .order-btn{
     padding: 1rem 2.25rem 0.75rem;
+  }
+  .checkout-step-title{
+    margin:{
+      bottom: 2.875rem;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
   }
 }
 .checkout-step-title{
@@ -16,6 +28,19 @@
     size: 0.875rem;
     weight: normal;
   };
-  margin: 0;
   padding-bottom: 1rem;
 }
+
+.checkout-step-2{
+  .form-group{
+    margin-bottom: 2rem;
+  }
+
+  .contact-textarea-input{
+    height: 5.125rem;
+  }
+  .from-row-m {
+    margin-top: 1.3rem;
+  }
+}
+
