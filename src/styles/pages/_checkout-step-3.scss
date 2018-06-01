@@ -1,0 +1,62 @@
+.checkout-step-3{
+  .search-box{
+    background-color: $bg-color;
+    border-radius: 5px;
+    max-width: 100%;
+    height: 46px;
+  }
+  .select-arrow{
+    flex: 1;
+    max-width: 100%;
+    border: none;
+  }
+  .search-select{
+    border: none;
+    & > option{
+      color: rgba($accent-text-color, 0.7);
+
+      @include media-breakpoint-down(xs){
+        font-size: 0.6rem;
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(xs){
+      font-size: 0.7rem;
+      text-overflow: ellipsis;
+      width: 100%;
+      padding-right: 2rem;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .cart-table-footer--sum{
+    font-size: 0.875rem;
+  }
+  .first.form-group{
+    margin-bottom: 1.5625rem;
+  }
+}
+.inputCalendar{
+  position: relative;
+  &::-webkit-inner-spin-button,
+  &::-webkit-datetime-edit-fields-wrapper{
+    display: none;
+  }
+  &::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+  &::after {
+    content: '';
+    display: block;
+    background: url('../../assets/img/icons/input-calendar.svg') no-repeat;
+    width: 1.125rem;
+    height: 1.25rem;
+    position: absolute;
+    right: 0.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

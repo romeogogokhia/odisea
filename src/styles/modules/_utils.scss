@@ -57,6 +57,10 @@
   }
 
 }
+.price.micro.sum{
+  color: $accent-color;
+  font-size: 0.875rem;
+}
 .price.medium.sum{
   color: $accent-color;
   font-size: 1.0625rem;
@@ -64,6 +68,65 @@
 .price.small{
   color: $accent-text-color;
   font-size: 1rem;
+}
+
+
+.checkout-radio+.checkout-radio{
+  margin-left: 2.5rem;
+}
+.checkout-radio {
+  display: inline-block;
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    + .checkout-radio-label {
+      color: $accent-text-color;
+      font: {
+        family: $HelveticaNeueLTGEO-65Medium;
+        size: 1rem;
+      };
+      display: inline-flex;
+      align-items: center;
+      &:before {
+        content: '';
+        background: white;
+        border-radius: 100%;
+        border: 1px solid $ft-divider;
+        display: inline-block;
+        width: 0.875rem;
+        height: 0.875rem;
+        position: relative;
+        margin-right: 1rem;
+        vertical-align: middle;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+    }
+    &:checked {
+      + .checkout-radio-label {
+        &:before {
+          background-color: $lighter-blue;
+          box-shadow: inset 0 0 0 1px white;
+        }
+      }
+    }
+    &:focus {
+      + .checkout-radio-label {
+        &:before {
+          outline: none;
+          border-color: $ft-divider;
+        }
+      }
+    }
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 
