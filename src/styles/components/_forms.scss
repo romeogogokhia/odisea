@@ -36,6 +36,27 @@
   border-radius: 5px;
   padding: 0.69rem 0.75rem;
   margin: 2px 0;
+  font-size: 0.875rem;
+
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba($accent-text-color, 0.5);
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgba($accent-text-color, 0.5);;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgba($accent-text-color, 0.5);
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba($accent-text-color, 0.5);
+  }
+  &:-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba($accent-text-color, 0.5);
+  }
+
+  &::placeholder { /* Most modern browsers support this now. */
+    color: rgba($accent-text-color, 0.5);
+  }
 }
 .form-label{
   color: $accent-text-color;

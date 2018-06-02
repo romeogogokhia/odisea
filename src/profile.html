@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>vacancies</title>
+    <title>profile</title>
 </head>
 
 <body>
@@ -214,102 +214,114 @@
 <section class="s-wrap">
 
     <div class="container p-lg-0">
-        <div class="row no-gutters">
+        <div class="row justify-content-center">
 
-            <div class="col-sm-6 col-md-12">
+            <div class="col-12">
                 <aside class="router-links-wrap">
-                    <h1 class="cart-title">ვაკანსიები</h1>
+                    <h1 class="cart-title">პირადი მონაცემები</h1>
                     <nav>
                         <ul class="router-menu">
                             <li class="router-menu--li">
                                 <a class="router-link" href="#">მთავარი</a>
                             </li>
                             <li class="router-menu--li active router-arrow">
-                                <a class="router-link" href="#">ვაკანსიები</a>
+                                <a class="router-link" href="#">პროფილი</a>
+                            </li>
+                            <li class="router-menu--li active router-arrow">
+                                <a class="router-link" href="#">პირადი მონაცემები</a>
                             </li>
                         </ul>
                     </nav>
                 </aside>
             </div>
 
-            <div class="col-sm-6 col-md-3">
+            <div class="order-2 order-md-1 col-md-8 col-lg-9">
 
+                <section class="s-checkout-step even">
+                    <div class="profile">
 
-                <aside class="aside-menu-wrap">
+                        <div class="profile-wrap">
+                            <form class="form-wrap profile-form">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="profile_data_Name">სახელი</label>
+                                        <input type="text" class="form-control form-control-custom" id="profile_data_Name" placeholder="გიორგი" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="profile_data_Surname">გვარი</label>
+                                        <input type="text" class="form-control form-control-custom" id="profile_data_Surname" placeholder="გიორგაძე" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="profile_data_Phone">ტელეფონი</label>
+                                        <input type="number" class="form-control form-control-custom" id="profile_data_Phone" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="profile_data_Email">ელ. ფოსტა</label>
+                                        <input type="email" class="form-control form-control-custom" id="profile_data_Email" placeholder="george@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="profile_data_date">დაბადების თარიღი</label>
+                                        <input type="date" class="form-control form-control-custom inputCalendar two" id="profile_data_date" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="profile_data_address">სქესი</label>
+                                        <div class="search-box">
+                                            <div class="select-arrow">
+                                                <select class="search-select" name="" id="profile_data_address">
+                                                    <option value="category" selected>კაცი</option>
+                                                    <option value="2">ქალი</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row from-row-m">
+                                    <div class="col-12 d-flex justify-content-end align-items-center">
+                                        <button type="submit" class="order-btn">რედაქტირება</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="order-1 order-md-2  col-md-4 col-lg-3">
+
+                <aside class="aside-menu-wrap for-profile">
                     <nav class="aside-nav">
                         <ul class="aside-menu">
                             <li class="aside-menu--li">
-                                <a href="#">ჩვენ შესახებ</a>
+                                <a href="#">პირადი მონაცემები</a>
                             </li>
                             <li class="aside-menu--li active">
-                                <a href="#">მომსახურება</a>
+                                <a href="#">შეკვეთების სიტორია</a>
                             </li>
                             <li class="aside-menu--li">
-                                <a href="#">ვაკანსიები</a>
+                                <a href="#">ჩემი მისამართები</a>
                             </li>
                             <li class="aside-menu--li">
-                                <a href="#">კონტაქტი</a>
+                                <a href="#">პაროლის შეცვლა</a>
+                            </li>
+                            <li class="aside-menu--li">
+                                <a href="#">გამოსვლა</a>
                             </li>
                         </ul>
                     </nav>
                 </aside>
 
             </div>
-            <div class="col-sm-12 col-md-9">
 
-                <article class="article-content-wrap">
-
-                    <div class="article-content bg-bt-triangle">
-
-
-                        <nav class="nav-list">
-                            <ul class="nav-list-menu">
-                                <li class="nav-list-menu--li  active">
-                                    <a href="#">დასახელება
-                                        <span class="nav-list-menu--li--deadline">ბოლო ვადა</span>
-                                    </a>
-                                </li>
-                                <li class="nav-list-menu--li">
-                                    <a href="./vacancies-detailed.html">კორპორატიული გაყიდვების მენეჯერი
-                                        <span class="nav-list-menu--li--right">
-                                            <span class="nav-list-menu--li--date">22.04.2018</span>
-                                            <img class="nav-list-menu--li--arrow" src="./assets/img/icons/silver-arrow.svg" width="12.95px" height="6.48px" alt="arrow icon">
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="nav-list-menu--li">
-                                    <a href="#">ინგლისურ ენოვანი ოპერატორი
-                                        <span class="nav-list-menu--li--right">
-                                            <span class="nav-list-menu--li--date">22.04.2018</span>
-                                            <img class="nav-list-menu--li--arrow" src="./assets/img/icons/silver-arrow.svg" width="12.95px" height="6.48px" alt="arrow icon">
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="nav-list-menu--li">
-                                    <a href="#">საზოგადოებასთან ურთიერთობის მენეჯერი
-                                        <span class="nav-list-menu--li--right">
-                                            <span class="nav-list-menu--li--date">25.04.2018</span>
-                                            <img class="nav-list-menu--li--arrow" src="./assets/img/icons/silver-arrow.svg" width="12.95px" height="6.48px" alt="arrow icon">
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="nav-list-menu--li">
-                                    <a href="#">ოფის მენეჯერი
-                                        <span class="nav-list-menu--li--right">
-                                            <span class="nav-list-menu--li--date">22.04.2018</span>
-                                            <img class="nav-list-menu--li--arrow" src="./assets/img/icons/silver-arrow.svg" width="12.95px" height="6.48px" alt="arrow icon">
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-
-                    </div>
-
-                </article>
-
-            </div>
         </div>
     </div>
 

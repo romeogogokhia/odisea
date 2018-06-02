@@ -1,0 +1,10 @@
+.profile{
+  .from-row-m{
+    margin-top: 2.85rem;
+  }
+}
+.aside-menu-wrap.for-profile{
+  @include media-breakpoint-down(sm){
+    margin-bottom: 2rem;
+  }
+}
