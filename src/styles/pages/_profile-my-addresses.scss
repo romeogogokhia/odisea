@@ -1,0 +1,67 @@
+.profile-my-addresses {
+  margin-bottom: 14.25rem;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 7rem;
+  }
+  .s-checkout-step {
+    padding: 1.7rem 2.25rem 14.375rem 2.25rem;
+    margin-bottom: 1.875rem;
+
+    @include media-breakpoint-down(sm){
+      padding: 1.7rem 1rem 6rem;
+    }
+    @include media-breakpoint-down(xs){
+      padding: 1.7rem 1rem 3rem;
+    }
+  }
+}
+.profile-my-addresses{
+  .nav-list-menu--li{
+    border-bottom: 1px solid rgba($ft-divider, 0.5);
+    padding: 0.8rem 0;
+  }
+  .nav-list-menu--li a{
+    padding-left: 2.8125rem;
+    position: relative;
+
+    @include media-breakpoint-down(xs){
+      padding-left: 2rem;
+    }
+    &::before{
+      content: '';
+      background: url("../../assets/img/icons/home-button.svg") no-repeat;
+      display: inline-block;
+      height: 14.55px;
+      width: 17.12px;
+      margin-left: 0.5rem;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background ease-in-out 200ms;
+    }
+    &:hover{
+      &::before{
+        background: url("../../assets/img/icons/home-button-active.svg") no-repeat;
+      }
+    }
+
+    @include media-breakpoint-down(sm){
+      font-size: .8rem;
+      flex-direction: row;
+    }
+    @include media-breakpoint-down(xs){
+      font-size: .7rem;
+    }
+  }
+  .nav-list-menu--li.active a{
+    position: relative;
+    &::before{
+      background: url("../../assets/img/icons/home-button-active.svg") no-repeat;
+    }
+  }
+  .dark-purple{
+    display: block;
+    margin-left: auto;
+  }
+}

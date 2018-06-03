@@ -1,4 +1,9 @@
 .profile-order-history-details{
+  margin-bottom: 16.125rem;
+
+  @include media-breakpoint-down(xs){
+    margin-bottom: 8rem;
+  }
   .cart-table-footer--top{
     width: auto;
   }
