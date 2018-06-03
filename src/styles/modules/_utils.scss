@@ -1,7 +1,10 @@
 .price{
   color: $price-color;
   display: inline-block;
-  font-family: $HelveticaNeueLTGEO-65Medium;
+  font:{
+    family: $HelveticaNeueLTGEO-65Medium;
+    weight: normal;
+  }
   padding: 0 8px 0 0;
   position: relative;
 

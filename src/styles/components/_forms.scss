@@ -64,6 +64,10 @@
     family: $HelveticaNeueLTGEO-65Medium;
     size: 1rem;
   };
+
+  @include media-breakpoint-down(xs){
+    font-size: .9rem;
+  }
 }
 
 .from-row-m{

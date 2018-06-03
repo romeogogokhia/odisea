@@ -45,6 +45,10 @@
   }
   .cart-product-img{
     max-width: 100px;
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cart-product-desc{
     width: 71%;
@@ -218,7 +222,6 @@
     margin-right: 5.4375rem;
 
     @include media-breakpoint-down(xs){
-      //margin: 0;
       margin: auto;
     }
   }

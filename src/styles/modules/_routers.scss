@@ -9,6 +9,10 @@
       weight: normal;
     }
     margin: 0;
+
+    @include media-breakpoint-down(xs){
+      font-size: 1rem;
+    }
   }
 
 }
@@ -37,6 +41,11 @@
     size: 0.875rem;
   }
   transition: color ease-in-out 200ms;
+
+  @include media-breakpoint-down(xs){
+    font-size: 0.77rem;
+  }
+
   &:hover{
     color: $accent-text-color;
   }
