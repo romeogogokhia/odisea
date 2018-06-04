@@ -1,15 +1,22 @@
 .cart-table-wrapper{
   background-color: $white;
-  border:{
+/*  border:{
     right: 1px solid $sl-border;
     top: 1px solid $sl-border;
     left: 1px solid $sl-border;
-  }
+  }*/
   padding: 0 1.75rem 3.4375rem;
-
+  position: relative;
   display: table;
   width: 100%;
   table-layout: fixed;
+
+  @include media-breakpoint-down(xs){
+    padding:{
+      left: 1rem;
+      right: 1rem;
+    };
+  }
   &--hack{
     display: table-cell;
     overflow-x: auto;
@@ -28,6 +35,7 @@
     font: {
       family: $HelveticaNeueLTGEO-65Medium;
       size: 0.875rem;
+      weight: normal;
     };
     padding: 2.25rem 0 0.875rem;
     border-bottom: 1px solid $ft-divider;
@@ -40,8 +48,12 @@
     }
   }
   &--td{
-    //padding: 1.375rem 0;
     border-bottom: 1px solid rgba($ft-divider, .5);
+    height: 9.5rem;
+
+    @include media-breakpoint-down(xs){
+      height: 5.5rem;
+    }
   }
   .cart-product-img{
     max-width: 100px;

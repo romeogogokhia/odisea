@@ -1,0 +1,59 @@
+.profile-order-history{
+  margin-bottom: 7.12rem;
+  @include media-breakpoint-down(xs){
+    margin-bottom: 3rem;
+  }
+  .cart-table-wrapper{
+    padding-bottom: 8.0625rem;
+    @include media-breakpoint-down(xs){
+      padding-bottom: 4rem;
+    }
+  }
+  .cart-table tbody tr:last-child .cart-table--td{
+    border-bottom: 1px solid rgba($ft-divider, .5);
+  }
+  .table-col-1{
+    width: 27.58620689655172%;
+    @include media-breakpoint-down(xs){
+      width: 13.586207%;
+    }
+  }
+  .table-col-2{
+    width: 27.81609195402299%;
+    @include media-breakpoint-down(xs){
+      width: 14.816092%;
+    }
+  }
+  .table-col-3,
+  .table-col-4{
+    width: 22.29885057471265%
+  }
+  .cart-table--td{
+    color: $accent-text-color;
+    font:{
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.875rem;
+    };
+    height: 2.75rem;
+
+    @include media-breakpoint-down(xs){
+      height: 2rem;
+    }
+  }
+  .eye-symbol{
+    margin-right: 1rem;
+  }
+  .pagination-nav{
+    margin-top: 2rem;
+  }
+  .pagination{
+    justify-content: flex-end;
+  }
+}
+.order-state{
+  border-radius: 2px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  margin-left: 1.25rem;
+}
