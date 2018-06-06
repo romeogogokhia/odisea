@@ -25,12 +25,12 @@
                             </div>
                             <div id="navigation" class="top-right-menu">
                                 <ul class="nav-top--menu">
-                                    <li><a href="#">მთავარი</a></li>
-                                    <li><a href="#">მიწოდება</a></li>
-                                    <li><a href="#">ჩვენ შესახებ</a></li>
-                                    <li><a href="#">მომსახურება</a></li>
-                                    <li><a href="#">ვაკანსია</a></li>
-                                    <li><a href="#">კონტაქტი</a></li>
+                                    <li class="nav-top--menu--li"><a href="#">მთავარი</a></li>
+                                    <li class="nav-top--menu--li"><a href="#">მიწოდება</a></li>
+                                    <li class="nav-top--menu--li"><a href="#">ჩვენ შესახებ</a></li>
+                                    <li class="nav-top--menu--li"><a href="#">მომსახურება</a></li>
+                                    <li class="nav-top--menu--li"><a href="#">ვაკანსია</a></li>
+                                    <li class="nav-top--menu--li"><a href="#">კონტაქტი</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -63,8 +63,7 @@
                                                 <span class="dropdown-item--text">წიგნები</span>
                                                 <span class="dropdown-item--count">1200</span>
                                                 <span class="dropdown-item--arrow"></span>
-                                                <img class="dropdown-item--icon" src="./assets/img/icons/icon.svg"
-                                                     alt="">
+                                                <img class="dropdown-item--icon" src="./assets/img/icons/icon.svg" alt="">
                                             </a>
                                             <div class="dropdown-side">
                                                 <ul class="dropdown-side--left">
@@ -207,6 +206,7 @@
             </div>
         </div>
     </nav>
+
 </header>
 
 
@@ -254,10 +254,7 @@
                     <aside class="product-list-aside product-list-section--left">
                         <nav class="product-list-nav">
                             <div class="dropdown-product-list">
-                                <a class="product-list-title" href="#">კატეგორიები
-                                    <span class="product-list-minus"></span>
-                                    <span class="product-list-plus"></span>
-                                </a>
+                                <div class="product-list-title minus">კატეგორიები</div>
                             </div>
                             <div class="dropdown-product-list-content">
                                 <ul class="product-list-menu">
@@ -276,10 +273,7 @@
                     <aside class="product-list-aside product-list-section--right">
                         <nav class="product-list-nav">
                             <div class="dropdown-product-list">
-                                <a class="product-list-title" href="#">ავტორები
-                                    <span class="product-list-minus"></span>
-                                    <span class="product-list-plus"></span>
-                                </a>
+                                <div class="product-list-title minus">ავტორები</div>
                             </div>
                             <div class="dropdown-product-list-content">
                                 <ul class="product-list-menu">
@@ -299,12 +293,9 @@
 
                 <section class="multi_range-section">
                     <aside class="aside-multi_range">
-
-                        <a class="product-list-title" href="#">ფასი
-                            <span class="product-list-minus"></span>
-                            <span class="product-list-plus"></span>
-                        </a>
-
+                        <div class="aside-multi_range-header">
+                            <div class="product-list-title minus">ფასი</div>
+                        </div>
                         <div class="product-list-content">
                             <div class="from-to">
                                 <input id="product_list_price_min" class="from-to--from" type="text" placeholder="დან">
@@ -693,6 +684,7 @@
     </div>
 
 </footer>
+
 
 </body>
 </html>
