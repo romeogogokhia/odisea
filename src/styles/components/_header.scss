@@ -150,7 +150,10 @@
     width: 12.95px;
     height: 6.48px;
     top: 50%;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(360deg);
+    &.active{
+      transform: translateY(-50%) rotate(180deg);
+    }
   }
 }
 .dropdown-hamburger{
@@ -317,14 +320,12 @@
   position: relative;
   z-index: 20;
 }
-
-
-/*
-.shopping-cart{
-  max-width: 8.375rem;
-  flex: 0 0 16.875rem;
-}*/
-
+.dropdown-menu{
+  display: none;
+}
+.dropdown-menu.active{
+  display: block;
+}
 
 .shopping-cart,
 .cabinet,

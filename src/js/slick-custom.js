@@ -1,8 +1,6 @@
 window.slick = require('slick-carousel');
 
-
-
-$(".main-slider").slick({
+$('.main-slider').slick({
 
     // normal options...
     infinite: true,
@@ -87,11 +85,6 @@ $(".sl-product").slick({
         settings: "unslick" // destroys slick
     }]
 });
-
-/*$(".sl-tabs").on("toggled", function (event, tab) {
-    $(".sl-product").slick("setPosition");
-});*/
-
 
 
 $('.slider-for').slick({

@@ -1,3 +1,3 @@
 import "./Picturefil"
-import "./slick-custom"
+import "./slick-carousel"
 import "./nouislider"
