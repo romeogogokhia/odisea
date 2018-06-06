@@ -68,6 +68,10 @@
   background-color: $white;
   border-radius: 5px;
   border-bottom: 3px solid $divider;
+  display: inline-flex;
+  align-items: center;
+  min-width: 7.875rem;
+  justify-content: space-between;
   position: relative;
   padding: 0.66rem 0.8125rem;
   .cart-icon{
@@ -80,7 +84,7 @@
       family: $HelveticaNeueLTGEO-65Medium;
       size: 0.875rem
     };
-    margin: 0 0.75rem;
+    margin: 0 0.1rem;
   }
   &--points{
     background-color: $lighter-blue;
@@ -92,7 +96,9 @@
     };
     width: 20px;
     height: 20px;
-    padding: 3px 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -181,9 +187,6 @@
   .cabinet--btn{
     padding: 0.94rem .7rem;
   }
-  .cart-btn--price{
-    margin: 0 0.5rem;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .cabinet--btn{
@@ -198,6 +201,7 @@
 
   .cart-btn{
     padding: 0.66rem 0.5rem;
+    min-width: 6.875rem;
     &--price{
       font-size: 0.8rem;
       margin: 0 0.4rem;
@@ -218,6 +222,7 @@
 
   .cart-btn{
     padding: 0.66rem 0.6rem;
+    min-width: 7.875rem;
     &--price{
       font-size: 0.9rem;
       margin: 0 0.7rem;

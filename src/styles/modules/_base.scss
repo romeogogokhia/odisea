@@ -14,8 +14,10 @@ img{
 ul{
   list-style: none;
 }
+a{
+  transition: color ease-in-out 200ms;
+}
 a,
 a:hover{
-  color: initial;
   text-decoration: none;
 }

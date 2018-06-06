@@ -52,6 +52,10 @@
       min-height: 180px;
       text-align: center;
     }
+    @include media-breakpoint-down(sm){
+      min-height: 150px;
+      width: 85%;
+    }
 
     .h2{
       color: rgba($accent-text-color, .5);
@@ -76,6 +80,9 @@
 
       @include media-breakpoint-down(md){
         font-size: 1.4rem;
+      }
+      @include media-breakpoint-down(md){
+        font-size: 1rem;
       }
     }
     &--in{
@@ -102,7 +109,9 @@
       order: 1;
       margin: auto;
     }
-
+    @include media-breakpoint-down(xs){
+      width: 6.875rem;
+    }
     & img{
       margin: auto;
     }
@@ -297,9 +306,6 @@
     margin: 0 -15px;
   }
   &--list{
-    // margin-left: 1.875rem;
-    // max-width: 16.875rem;
-    // min-height: 27.4375rem;
     position: relative;
 
     .sl-product-link{
@@ -317,7 +323,7 @@
           image: url("../../assets/img/icons/Rectangle-border-bottom.png");
           repeat: repeat-x;
         };
-        height: 9px;
+        height: 8px;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -465,8 +471,9 @@
   padding: 0;
   display: flex;
   margin: 0;
-  & > li a{
+  & > li *{
     color: $accent-text-color;
+    cursor: pointer;
     font:{
       family: $HelveticaNeueLTGEO-65Medium;
       size: 1rem;
@@ -479,7 +486,7 @@
     }
   }
 
-  & > li.active a{
+  & > li > *.active {
     color: $lighter-blue;
   }
   & > li+li{
@@ -497,7 +504,7 @@
       text-align: right;
     }
   }
-  & > li:hover a{
+  & > li:hover *{
     color: $lighter-blue;
   }
 

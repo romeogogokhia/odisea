@@ -235,6 +235,7 @@
             <div class="order-2 order-md-1 col-md-8 col-lg-9">
 
                 <section class="s-checkout-step even">
+
                     <div class="checkout-step-2">
 
                         <h2 class="checkout-step-title">2. საკონტაქტო ინფორმაცია</h2>
@@ -270,6 +271,97 @@
                                 <div class="form-row justify-content-between align-items-center from-row-m">
                                     <div class="col-12 d-flex justify-content-end">
                                         <button type="submit" class="order-btn">გაგრძელება</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="checkout-step-3">
+
+                        <h2 class="checkout-step-title">2. მიტანის ადგილი</h2>
+
+                        <div class="checkout-step-3-wrap">
+                            <form class="form-wrap checkout-step-3-form">
+                                <div class="form-row">
+                                    <div class="first form-group col-md-12">
+                                        <label class="required-label form-label" for="checkout_step_3_address">მისამართი</label>
+                                        <div class="search-box">
+                                            <div class="select-arrow">
+                                                <select class="search-select" name="" id="checkout_step_3_address">
+                                                    <option value="category" selected>შიდა ქართლი, გორი, მაზნიაშვილის ქ.12</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-between">
+                                    <div class="form-group col-sm-6 d-flex align-items-center ">
+                                        <div class="cart-table-footer--top--in">
+                                            <h5 class="cart-table-footer--sum">ადგილზე მიტანა:</h5>
+                                            <span class="price micro sum">3.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6 d-flex align-items-center justify-content-start justify-content-sm-end">
+                                        <button class="dark-purple" type="button">ახალი მისამართი</button>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="checkout_step_3_date">მიტანის თარიღი</label>
+                                        <input type="date" class="form-control form-control-custom inputCalendar one" id="checkout_step_3_date" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="required-label form-label" for="checkout_step_3_time">მიტანის დრო</label>
+                                        <input type="number" class="form-control form-control-custom" id="checkout_step_3_time" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="required-label form-label" for="checkout_step_3_Info">დამატებითი ინფორმაცია</label>
+                                        <textarea class="form-control form-control-custom contact-textarea-input" id="checkout_step_3_Info" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-between align-items-center from-row-m">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="submit" class="order-btn">გაგრძელება</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="checkout-step-4">
+
+                        <h2 class="checkout-step-title">2. გადახდის მეთოდი</h2>
+
+                        <div class="checkout-step-4-wrap">
+                            <form class="form-wrap checkout-step-4-form">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 d-flex justify-content-md-start justify-content-between flex-sm-row flex-column">
+                                        <div class="form-check form-check-inline checkout-radio">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label checkout-radio-label" for="inlineRadio1">ბარათით გადახდა</label>
+                                        </div>
+                                        <div class="form-check form-check-inline checkout-radio">
+                                            <input class="form-check-input checkout-radio" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label checkout-radio-label" for="inlineRadio2">თანხა ხელზე</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 col-lg-6">
+                                        <div class="padding-right">
+                                            <label class="form-label" for="checkout_step_3_time">რა კუპიურა გაქვთ ხელზე</label>
+                                            <input type="number" class="form-control form-control-custom" id="checkout_step_3_time" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row from-row-m">
+                                    <div class="col-12 d-flex justify-content-end align-items-center">
+                                        <a class="checkout-back-link" href="#">უკან</a>
+                                        <button type="submit" class="order-btn">ყიდვა</button>
                                     </div>
                                 </div>
                             </form>

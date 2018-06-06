@@ -28,18 +28,33 @@
   align-items: center;
 
   @include  media-breakpoint-down(lg){
-    background: $accent-color;
+    background: rgba($accent-color, 0.9);
     display: flex;
     flex-direction: column;
     margin-top: 98px;
     position: absolute;
-    left: 0;
     right: 0;
     height: auto;
     padding: 20px;
-    z-index: 11;
+    width: 20rem;
+    z-index: 30;
   }
-  & > li+li{
+  @include  media-breakpoint-down(xs){
+    width: 100%;
+  }
+  &--li{
+    @include  media-breakpoint-down(lg) {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba($vertical-divider, 0.7);
+      text-align: center;
+      display: block;
+      width: 100%;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  &--li+&--li{
     margin-left: 1.5625rem;
     font-size: 0.875rem;
 
@@ -47,16 +62,21 @@
       margin: auto;
     }
   }
-  & > li > a{
+  &--li > a{
     color: $accent-text-color;
     font:{
       family: $HelveticaNeueLTGEO-65Medium;
       size: 0.875rem;
     }
+    transition: color ease-in-out 200ms;
+    &:hover{
+      color: $ft-top-color;
+    }
     @include  media-breakpoint-down(lg){
       color: $white;
       line-height: 1.6;
     }
+
   }
 }
 .top-right-menu{
@@ -152,6 +172,10 @@
   height: 10.5rem;
   padding: 2.1875rem 1.125rem 1.5rem 1.125rem;
   position: relative;
+
+  @include media-breakpoint-down(xs){
+    height: 8.5rem;
+  }
 
   &:hover::after{
     content: '';
@@ -357,7 +381,7 @@
   height: 100%;
   flex: 0 0 37.883%;
   max-width: 37.883%;
-  &::after{
+  &::before{
     content: '';
     background: url("../../assets/img/icons/silver-arrow.svg") no-repeat;
     width: 12.95px;
@@ -366,6 +390,16 @@
     right: 0.8125rem;
     top: 50%;
     transform: translateY(-50%);
+  }
+  &::after{
+    content: '';
+    background-color: #E2E2E2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
   }
 
   @include media-breakpoint-down(xs){
@@ -387,10 +421,9 @@
   outline: none;
   padding: {
     left: 10px;
-    right: 12px;
+    right: 2rem;
   }
-  border-right: 1px solid #E2E2E2;
-  height: 60%;
+  height: 100%;
   color: $accent-text-color;
   font: {
     family: $HelveticaNeueLTGEO-65Medium;
