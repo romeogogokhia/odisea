@@ -4,6 +4,9 @@
   @include media-breakpoint-down(xs){
     margin-bottom: 8rem;
   }
+  .cart-table{
+    min-width: 100%;
+  }
   .cart-table-footer--top{
     width: auto;
   }
@@ -26,10 +29,16 @@
     @include media-breakpoint-down(md){
       font-size: 1.25rem;
     }
+    @include media-breakpoint-down(xs){
+      font-size: 0.8rem;
+    }
   }
   .price.medium{
     @include media-breakpoint-down(md){
       font-size: 1rem;
+    }
+    @include media-breakpoint-down(xs){
+      font-size: 0.7rem;
     }
   }
   .cart-table--th{
@@ -65,6 +74,13 @@
       min-width: 4rem;
       height: 1.4rem;
     }
+    @include media-breakpoint-down(xs){
+      min-width: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 2.2rem;
+    }
     & > span{
       @include media-breakpoint-down(md){
         height: 1.5rem;
@@ -91,6 +107,12 @@
       @include media-breakpoint-down(sm){
         min-width: 1.3rem;
         font-size: 0.7rem;
+      }
+      @include media-breakpoint-down(xs){
+        width: 98%;
+        overflow-x: scroll;
+        font-size: 0.7rem;
+        height: 1.7rem !important;
       }
     }
 
