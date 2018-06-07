@@ -25,7 +25,7 @@
 }
 
 .cart-table{
-  min-width: 350px;
+  min-width: 100%;
   max-width: 100%;
   width: 100%;
   background-color: $white;
@@ -70,6 +70,11 @@
     display: flex;
     margin: 0;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xs){
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
 .cart-product-type{
@@ -125,8 +130,11 @@
     height: 1.77rem;
   }
   @include media-breakpoint-down(xs){
-    min-width: 4rem;
-    height: 1.4rem;
+    min-width: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 2.2rem;
   }
 
   & > span{
@@ -268,4 +276,28 @@
   position: absolute;
   bottom: -30px;
   left: 0;
+}
+
+
+
+
+@media (max-width: 420px) {
+  .cart-table--th{
+    font-size: 0.7rem;
+  }
+  .price.big {
+    font-size: 0.7rem;
+  }
+  .price.medium {
+    font-size: 0.65rem;
+  }
+  .close-icon, .delete-icon {
+    cursor: pointer;
+    width: 0.8rem;
+  }
+}
+@media (max-width: 350px) {
+  .cart-table--th{
+    font-size: 0.55rem;
+  }
 }

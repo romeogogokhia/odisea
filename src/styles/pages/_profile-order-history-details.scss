@@ -80,6 +80,7 @@
       flex-direction: column;
       height: auto;
       width: 2.2rem;
+      margin: auto;
     }
     & > span{
       @include media-breakpoint-down(md){
@@ -117,8 +118,5 @@
     }
 
   }
-
-
-
 
 }
