@@ -3,6 +3,9 @@
   @include media-breakpoint-down(xs){
     margin-bottom: 3rem;
   }
+  .cart-table{
+    min-width: 100%;
+  }
   .cart-table-wrapper{
     padding-bottom: 8.0625rem;
     @include media-breakpoint-down(xs){
@@ -37,7 +40,12 @@
     height: 2.75rem;
 
     @include media-breakpoint-down(xs){
+      font-size: 0.7rem;
       height: 2rem;
+    }
+
+    .price.small{
+      font-size: 0.8rem;
     }
   }
   .eye-symbol{
