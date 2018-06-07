@@ -1,4 +1,11 @@
 .profile{
+  .input-group-text{
+    border: none;
+    border-radius: 5px;
+    background-color: $bg-color;
+    margin-top: 2px;
+    height: 2.6875rem;
+  }
   .from-row-m{
     margin-top: 2.85rem;
   }

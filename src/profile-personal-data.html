@@ -265,8 +265,16 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label class="required-label form-label" for="profile_data_date">დაბადების თარიღი</label>
-                                        <input type="date" class="form-control form-control-custom inputCalendar two" id="profile_data_date" required>
+                                        <label class="required-label form-label" for="datepicker">დაბადების თარიღი</label>
+
+                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                            <input id="datepicker" type="text" class="form-control datetimepicker-input form-control-custom" data-target="#datetimepicker4"/>
+                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                <div class="input-group-text">
+                                                    <img src="./assets/img/icons/profile-calendar.svg" width="18" height="20" alt="calendar">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="required-label form-label" for="profile_data_address">სქესი</label>
@@ -404,7 +412,6 @@
     </div>
 
 </footer>
-
 
 </body>
 </html>
