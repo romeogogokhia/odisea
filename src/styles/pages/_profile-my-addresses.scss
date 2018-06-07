@@ -19,6 +19,13 @@
   .nav-list-menu--li{
     border-bottom: 1px solid rgba($ft-divider, 0.5);
     padding: 0.8rem 0;
+
+    &--text{
+      width: 87%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   }
   .nav-list-menu--li a{
     padding-left: 2.8125rem;
