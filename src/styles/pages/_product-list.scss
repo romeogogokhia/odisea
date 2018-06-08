@@ -14,7 +14,11 @@
 
   .sort-title{
     color: $accent-text-color;
-    font-weight: normal;
+    font: {
+      family: $HelveticaNeueLTGEO-65Medium;
+      size: 0.875rem;
+      weight: normal;
+    }
     margin:{
       bottom: 0;
       right: 1.4375rem;
@@ -125,6 +129,18 @@
     .product-list-title{
       font-size: 1.2rem;
       padding: 0.9375rem 1.4375rem;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 420px) {
+  .product-list-wrapper{
+    .col-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 }

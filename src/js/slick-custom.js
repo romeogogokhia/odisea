@@ -76,7 +76,7 @@ $(".sl-product").slick({
             slidesToShow: 2
         }
     },{
-        breakpoint: 576,
+        breakpoint: 440,
         settings:{
             slidesToShow: 1
         }

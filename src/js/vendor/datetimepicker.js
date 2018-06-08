@@ -6,3 +6,6 @@ require('tempusdominus-bootstrap-4');
 $('#datetimepicker4').datetimepicker({
     format: 'L'
 });
+$('#datetimepicker2').datetimepicker({
+    format: 'L'
+});

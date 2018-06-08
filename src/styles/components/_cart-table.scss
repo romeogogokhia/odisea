@@ -1,10 +1,5 @@
 .cart-table-wrapper{
   background-color: $white;
-/*  border:{
-    right: 1px solid $sl-border;
-    top: 1px solid $sl-border;
-    left: 1px solid $sl-border;
-  }*/
   padding: 0 1.75rem 3.4375rem;
   position: relative;
   display: table;
@@ -17,11 +12,17 @@
       right: 1rem;
     };
   }
-  &--hack{
-    display: table-cell;
-    overflow-x: auto;
-    width: 100%;
+
+  .cart-table-points{
+    @include media-breakpoint-down(xs){
+      min-width: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 2.2rem;
+    }
   }
+
 }
 
 .cart-table{
@@ -88,7 +89,9 @@
   overflow: hidden;
   width: 90%;
   white-space: nowrap;
-
+  &:hover{
+    color: $accent-color;
+  }
   @include media-breakpoint-down(sm){
     font-size: 0.75rem;
   }
@@ -128,13 +131,6 @@
   @include media-breakpoint-down(sm){
     min-width: 4.5rem;
     height: 1.77rem;
-  }
-  @include media-breakpoint-down(xs){
-    min-width: 2.2rem;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 2.2rem;
   }
 
   & > span{
