@@ -67,7 +67,10 @@
     weight: 300;
   }
   margin-bottom: 1rem;
-  padding: 0.25rem 0.5rem;
+  display: flex;
+  padding: 0.25rem 0.875rem 0.25rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 
   @include media-breakpoint-down(sm){
     text-align: center;
@@ -78,4 +81,5 @@
 }
 .login-facebook{
   background-color: #CF4332;
+  padding-left: 0.18rem;
 }

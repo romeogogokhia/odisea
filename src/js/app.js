@@ -31,3 +31,4 @@ if(window.screen.width < 576) {
         }
     });
 }
+
