@@ -53,6 +53,10 @@
   bottom: 1.875rem;
   left: 2.0625rem;
 
+  &:hover{
+    color: white;
+  }
+
   &::after{
     content: '';
     background-image: url(../../assets/img/icons/white-arrow.svg);

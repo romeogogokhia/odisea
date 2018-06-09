@@ -1,4 +1,6 @@
+import "./jquery"
+import "./slick"
 import "./Picturefil"
-import "./slick-carousel"
 import "./nouislider"
 import "./datetimepicker"
+import "./jquery-doubletaptogo"

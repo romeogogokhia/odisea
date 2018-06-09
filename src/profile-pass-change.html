@@ -14,8 +14,10 @@
             <div class="row">
                 <div class="col">
                     <div class="nav-top--content">
-                        <img class="logo-wrap--img" src="./assets/img/logo.svg" alt="logo">
-                        <p class="phone-paragraph">+995 322 250 250</p>
+                        <div class="nav-top--content--left">
+                            <a href="./index.html"><img class="logo-wrap--img" src="./assets/img/logo.svg" alt="logo"></a>
+                            <p class="phone-paragraph">+995 322 250 250</p>
+                        </div>
                         <nav class="nav-top--content--right">
                             <div class="hamburger hamburger--elastic hamburger-top" tabindex="0"
                                  aria-label="Menu" role="button" aria-controls="navigation" aria-expanded="true">
@@ -25,12 +27,12 @@
                             </div>
                             <div id="navigation" class="top-right-menu">
                                 <ul class="nav-top--menu">
-                                    <li class="nav-top--menu--li"><a href="#">მთავარი</a></li>
+                                    <li class="nav-top--menu--li"><a href="./index.html">მთავარი</a></li>
                                     <li class="nav-top--menu--li"><a href="#">მიწოდება</a></li>
-                                    <li class="nav-top--menu--li"><a href="#">ჩვენ შესახებ</a></li>
-                                    <li class="nav-top--menu--li"><a href="#">მომსახურება</a></li>
-                                    <li class="nav-top--menu--li"><a href="#">ვაკანსია</a></li>
-                                    <li class="nav-top--menu--li"><a href="#">კონტაქტი</a></li>
+                                    <li class="nav-top--menu--li"><a href="./about-us.html">ჩვენ შესახებ</a></li>
+                                    <li class="nav-top--menu--li"><a href="./service.html">მომსახურება</a></li>
+                                    <li class="nav-top--menu--li"><a href="./vacancies.html">ვაკანსია</a></li>
+                                    <li class="nav-top--menu--li"><a href="./contact.html">კონტაქტი</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -56,11 +58,11 @@
                                     </button>
                                 </div>
 
-                                <div class="dropdown-header-menu" id="dropdown-header-menu" role="menu">
+                                <div class="dropdown-header-menu active" id="dropdown-header-menu" role="menu">
                                     <div class="dropdown-content">
 
                                         <div class="dropdown-content-list">
-                                            <a href="#" class="dropdown-item">
+                                            <a href="./product-list.html" class="dropdown-item">
                                                 <span class="dropdown-item--text">წიგნები</span>
                                                 <span class="dropdown-item--count">1200</span>
                                                 <span class="dropdown-item--arrow"></span>
@@ -89,7 +91,7 @@
                                         </div>
 
                                         <div class="dropdown-content-list">
-                                            <a href="#" class="dropdown-item">
+                                            <a href="./product-list.html" class="dropdown-item">
                                                 <span class="dropdown-item--text">წიგნები</span>
                                                 <span class="dropdown-item--count">1200</span>
                                                 <span class="dropdown-item--arrow"></span>
@@ -119,7 +121,7 @@
                                         </div>
 
                                         <div class="dropdown-content-list">
-                                            <a href="#" class="dropdown-item">
+                                            <a href="./product-list.html" class="dropdown-item">
                                                 <span class="dropdown-item--text">წიგნები</span>
                                                 <span class="dropdown-item--count">1200</span>
                                                 <span class="dropdown-item--arrow"></span>
@@ -179,18 +181,16 @@
                         <div class="order-1 order-sm-3 order-md-1 order-lg-3 col-sm-6 col-md-12 col-lg-3 col-xxl-3">
                             <div class="d-flex align-items-center cab-shop-wrap">
                                 <div class="cabinet">
-                                    <a href="#" class="cabinet--btn">
+                                    <a href="./profile-personal-data.html" class="cabinet--btn">
                                         <img class="cabinet--user" src="./assets/img/icons/user-icon.svg"
-                                             alt="user icon">
-                                        კაბინეტი
-                                    </a>
+                                             alt="user icon">კაბინეტი</a>
                                     <div class="cabinet-login">
-                                        <a href="#" class="login-btn">შესვლა</a>
-                                        <a href="#" class="login-btn registration">რეგისტრცია</a>
+                                        <a href="./login.html" class="login-btn">შესვლა</a>
+                                        <a href="./register.html" class="login-btn registration">რეგისტრცია</a>
                                     </div>
                                 </div>
                                 <div class="shopping-cart">
-                                    <a class="cart-btn" href="#">
+                                    <a class="cart-btn" href="./cart.html">
                                         <img class="cart-icon" src="./assets/img/icons/shopping-cart.svg"
                                              alt="cart icon">
                                         <span class="cart-btn--price">0.00</span>
@@ -315,13 +315,13 @@
         <div class="container  p-lg-0">
             <div class="row justify-content-center justify-content-sm-between align-items-center">
                 <div class="col-auto">
-                    <a class="footer-tel" href="tel:+995 322 250 250">+995 322 250 250</a>
+                    <a class="footer-tel" href="tel:+995322250250">+995 322 250 250</a>
                 </div>
                 <div class="col-auto">
                     <form action="#" method="post">
 
                         <div class="footer-input">
-                            <input class="footer-input--news" type="text" placeholder="გამოიწერეთ სიახლეები">
+                            <input  class="footer-input--news" type="text" placeholder="გამოიწერეთ სიახლეები">
                             <button class="footer-input--submit" type="submit">
                                 <img src="./assets/img/icons/send-button.svg" alt="">
                             </button>
