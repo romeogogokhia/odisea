@@ -173,6 +173,10 @@
   height: 15px;
   transform: translateY(-50%)
 }
+.dropdown-item.active,
+.dropdown-item:focus{
+  background-color: #fff;
+}
 .dropdown-item{
   background-color: white;
   display: block;
@@ -280,10 +284,8 @@
   display: none;
   background-color: $white;
   position: absolute;
-  // left: calc(100% + 12px);
   left: 100%;
   top: 12px;
-  //width: 580px;
   width: 31vw;
   height: 494px;
   padding: 40px 0 0;

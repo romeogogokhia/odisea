@@ -1,4 +1,3 @@
-import "./jquery"
 import "./slick"
 import "./Picturefil"
 import "./nouislider"
