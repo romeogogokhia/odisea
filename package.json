@@ -1,0 +1,74 @@
+{
+  "name": "odisea",
+  "version": "1.0.0",
+  "description": "odisea.ge",
+  "main": "webpack.config.js",
+  "browserslist": [
+    "defaults",
+    "not ie < 9",
+    "last 2 versions"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --config config/build.config.js --progress --colors",
+    "start": "webpack --config config/dev.config.js --watch --progress --colors",
+    "serve": "webpack-serve --config config/dev.config.js --content-base public/ --watch --progress --colors --open"
+  },
+  "author": "romeo gogokhia",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "8.3.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "4.5.1",
+    "cross-env": "5.1.4",
+    "css-loader": "0.28.11",
+    "eslint": "4.19.1",
+    "eslint-loader": "2.0.0",
+    "eslint-plugin-flowtype": "2.46.3",
+    "eslint-plugin-import": "2.11.0",
+    "expose-loader": "^0.7.5",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.1.5",
+    "import-glob-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.1.5",
+    "resolve-url-loader": "2.3.0",
+    "sass-loader": "7.0.1",
+    "script-loader": "0.7.2",
+    "style-loader": "0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "1.0.1",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.0.15",
+    "webpack-manifest-plugin": "^2.0.3",
+    "webpack-merge": "4.1.2",
+    "webpack-serve": "0.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romeogogokhia/odisea.git"
+  },
+  "bugs": {
+    "url": "https://github.com/romeogogokhia/odisea/issues"
+  },
+  "homepage": "https://github.com/romeogogokhia/odisea#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "hamburgers": "^0.9.3",
+    "jquery": "^3.3.1",
+    "jquery-doubletaptogo": "^3.0.2",
+    "moment": "^2.22.2",
+    "nouislider": "^11.1.0",
+    "slick-carousel": "^1.8.1",
+    "tempusdominus-bootstrap-4": "^5.0.0"
+  }
+}
