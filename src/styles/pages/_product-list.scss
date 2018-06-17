@@ -49,8 +49,16 @@
   .sl-product--list .sl-product-link{
     margin: 0 0 27px;
 
+    @include media-breakpoint-down(lg){
+      height: 22rem;
+    }
     @include media-breakpoint-down(md){
       padding: 1rem 1.5rem;
+      height: 27.4375rem;
+    }
+    @include media-breakpoint-down(sm){
+      padding: 1rem 1.5rem;
+      height: auto;
     }
 
     .sl-product-block{
@@ -61,10 +69,19 @@
         width: 100%;
       }
     }
-
+    .sl-product-desc{
+      @include media-breakpoint-only(lg) {
+        height: 6rem;
+      }
+    }
     .sl-product-desc--title{
       @include media-breakpoint-down(xs){
         text-align: center;
+      }
+    }
+    .sl-product-desc--price{
+      @include media-breakpoint-down(lg){
+        font-size: 1.2rem;
       }
     }
 

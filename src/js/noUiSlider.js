@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     let product_list_range = document.getElementById('product_list_range');
     let product_list_price_min = document.getElementById('product_list_price_min');

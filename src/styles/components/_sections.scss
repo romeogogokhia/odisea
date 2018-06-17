@@ -62,6 +62,17 @@
   background-color: $bg-color;
 }
 
+.sl-product--list .sl-product-link::after {
+  content: '';
+  background-image: url("../../assets/img/icons/Rectangle-border-bottom.png");
+  background-repeat: repeat-x;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 //s-cart
 .s-cart{
   padding-bottom: 5rem;

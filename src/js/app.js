@@ -1,5 +1,5 @@
-import "./vendor/vendor"
-import "./scripts/hamburger-menu"
-import "./scripts/header_cabinet-login"
-import "./scripts/dropdown-menu"
-import "./scripts/doubleTapToGo"
+import './vendor/vendor'
+import './scripts/hamburger-menu'
+import './scripts/header_cabinet-login'
+import './scripts/dropdown-menu'
+import './scripts/doubleTapToGo'

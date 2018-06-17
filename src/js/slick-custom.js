@@ -17,24 +17,22 @@ $('.main-slider').slick({
         }
     },{
         breakpoint: 300,
-        settings: "unslick" // destroys slick
+        settings: 'unslick' // destroys slick
     }]
 });
 
-
-let $carousel = $(".main-slider");
+let $carousel = $('.main-slider');
 
 $(document).on('keydown', function(e) {
-    if(e.keyCode == 37) {
+    if(e.keyCode === 37) {
         $carousel.slick('slickPrev');
     }
-    if(e.keyCode == 39) {
+    if(e.keyCode === 39) {
         $carousel.slick('slickNext');
     }
 });
 
-
-$(".vacancy-slider").slick({
+$('.vacancy-slider').slick({
 
     // normal options...
     infinite: true,
@@ -51,20 +49,18 @@ $(".vacancy-slider").slick({
         }
     },{
         breakpoint: 300,
-        settings: "unslick" // destroys slick
+        settings: 'unslick' // destroys slick
     }]
 });
 
-$(".sl-product").slick({
+$('.sl-product').slick({
 
-    // normal options...
     infinite: true,
     arrows: false,
     dots: false,
     focusOnSelect: true,
     slidesToShow: 4,
 
-    // the magic
     responsive: [{
         breakpoint: 1200,
         settings: {
@@ -82,10 +78,9 @@ $(".sl-product").slick({
         }
     },{
         breakpoint: 300,
-        settings: "unslick" // destroys slick
+        settings: 'unslick' // destroys slick
     }]
 });
-
 
 $('.slider-for').slick({
     slidesToShow: 1,
@@ -124,6 +119,4 @@ $('.slider-nav').slick({
         },
     }]
 });
-
-
 

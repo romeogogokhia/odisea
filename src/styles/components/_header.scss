@@ -226,19 +226,6 @@
       size: 1rem;
     };
   }
-  &--arrow{
-    position: absolute;
-    right: 1.125rem;
-    top: 2.1875rem;
-    background: {
-      image: url("../../assets/img/icons/silver-arrow.svg");
-      repeat: no-repeat;
-    }
-    width: 12.95px;
-    height: 6.48px;
-    transform: rotate(-90deg);
-    cursor: pointer;
-  }
   &--icon{
     height: 1.656rem;
     width: 2.166rem;

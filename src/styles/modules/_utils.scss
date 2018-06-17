@@ -133,15 +133,16 @@
 }
 
 
-/*
-.bg-bt-triangle{
-  &::after{
-    content: '';
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-    background: url("../../assets/img/icons/Rectangle-border-bottom.png") repeat-x;
-    height: 9px;
-    width: 100%;
+.dropdown-item--arrow{
+  position: absolute;
+  right: 1.125rem;
+  top: 2.1875rem;
+  background: {
+    image: url("../../assets/img/icons/silver-arrow.svg");
+    repeat: no-repeat;
   }
-}*/
+  width: 12.95px;
+  height: 6.48px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}

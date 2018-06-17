@@ -316,29 +316,12 @@
       padding: 1.5625rem 2.5rem;
       position: relative;
       height: 27.4375rem;
-
-      @include media-breakpoint-down(lg){
-        //height: 23rem;
-      }
       @include media-breakpoint-down(sm){
-        height: 18rem;  // add
+        height: 18rem;
         min-height: 17rem;
       }
       @include media-breakpoint-down(xs){
         height: auto;
-      }
-
-      &::after{
-        content: '';
-        background: {
-          image: url("../../assets/img/icons/Rectangle-border-bottom.png");
-          repeat: repeat-x;
-        };
-        height: 8px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left:0;
       }
     }
 
