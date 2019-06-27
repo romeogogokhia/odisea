@@ -27,8 +27,8 @@ module.exports = {
     output: {
         path: Path.join(opts.rootDir, 'public'),
         pathinfo: opts.devBuild,
-        //filename:  opts.devBuild ? 'js/[name].bundle.js' : 'js/[name].[contenthash].bundle.js'
-        filename: 'js/[name].bundle.js',
+        filename:  opts.devBuild ? 'js/[name].bundle.js' : 'js/[name].[contenthash].bundle.js'
+        // filename: 'js/[name].bundle.js',
     },
 
     optimization: {
@@ -61,8 +61,8 @@ module.exports = {
             root: Path.join(__dirname, '..')
         }),
         new MiniCssExtractPlugin({
-            //filename: opts.devBuild ? 'styles/[name].bundle.css' : 'styles/[name].[contenthash].bundle.css',
-            filename: 'styles/[name].bundle.css',
+            filename: opts.devBuild ? 'styles/[name].bundle.css' : 'styles/[name].[contenthash].bundle.css',
+            // filename: 'styles/[name].bundle.css',
         }),
         new CopyWebpackPlugin([
             {from: 'src/assets', to: 'assets'},

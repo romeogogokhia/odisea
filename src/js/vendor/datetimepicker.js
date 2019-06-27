@@ -7,5 +7,8 @@ $('#datetimepicker4').datetimepicker({
     format: 'L'
 });
 $('#datetimepicker2').datetimepicker({
-    format: 'L'
+  format: 'L'
+});
+$("#datetimepicker2").on("change.datetimepicker", function (e) {
+  $('#datetimepicker2').datetimepicker('minDate', e.date);
 });
